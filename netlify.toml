@@ -1,6 +1,6 @@
 [build]
   base = "."
-  command = "pnpm --filter @acme/nextjs build"
+  command = "pnpm build --filter=@acme/nextjs..."
   publish = "apps/nextjs/.next"
 
 [build.environment]
