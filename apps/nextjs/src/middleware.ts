@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 import { auth } from "@acme/auth/middleware";
 
-export async function middleware(request: NextRequest) {
+export default async function middleware(request: NextRequest) {
   const { url, nextUrl, cookies } = request;
 
   // Check for both common cookie names just in case
