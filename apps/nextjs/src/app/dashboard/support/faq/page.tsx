@@ -472,7 +472,7 @@ function CreateFAQItemDialog({
     e.preventDefault();
     createMutation.mutate({
       ...formData,
-      categoryId: formData.categoryId || undefined,
+      categoryId: formData.categoryId || "",
     });
   };
 

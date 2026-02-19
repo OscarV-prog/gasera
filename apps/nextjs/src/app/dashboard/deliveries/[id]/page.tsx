@@ -116,7 +116,7 @@ export default function DeliveryDetailPage() {
 
   // Real Data Fetch - Related Driver
   const { data: driverData } = useQuery(
-    api.drivers.byId.queryOptions(
+    api.fleetDrivers.byId.queryOptions(
       { id: orderData?.assignedDriverId ?? "" },
       { enabled: !!orderData?.assignedDriverId },
     ),

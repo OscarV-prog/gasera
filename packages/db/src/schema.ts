@@ -159,53 +159,55 @@ export const auditLogs = pgTable("audit_logs", {
 /**
  * Post Table (example multi-tenant table)
  */
-export const Post = pgTable("post", (t) => ({
-  id: t.uuid().notNull().primaryKey().defaultRandom(),
-  title: t.varchar({ length: 256 }).notNull(),
-  content: t.text().notNull(),
-  tenantId: t.text("tenant_id").notNull(),
-  createdAt: t.timestamp().defaultNow().notNull(),
-  updatedAt: t
-    .timestamp({ mode: "date", withTimezone: true })
-    .$onUpdateFn(() => sql`now()`),
-}));
+export const Post = pgTable("post", {
+  id: uuid("id").notNull().primaryKey().defaultRandom(),
+  title: text("title").notNull(), // varchar(256) is equivalent to text in PG usually or specific varchar
+  content: text("content").notNull(),
+  tenantId: text("tenant_id").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at")
+    .$onUpdate(() => sql`now()`)
+    .notNull(),
+});
 
 /**
  * Schemas
  */
-export const CreatePostSchema = createInsertSchema(Post, {
+export const CreatePostSchema = z.object({
   title: z.string().max(256),
   content: z.string().max(256),
-}).omit({
-  id: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const CreateOrganizationSchema = createInsertSchema(organizations, {
+export const CreateOrganizationSchema = z.object({
   name: z.string().min(2).max(100),
   subdomain: z
     .string()
     .min(2)
     .max(50)
-    .regex(/^[a-z0-9-]+$/),
+    .regex(/^[a-z0-9-]+$/)
+    .nullable()
+    .optional(), // unique but optional in creation? Schema says unique but maybe nullable?
+  // line 119: subdomain: text("subdomain").unique(), so it is nullable by default in Drizzle if not .notNull().
+  // Schema def: subdomain: text("subdomain").unique(), -> nullable.
+  // Zod schema above had it... wait, previous code:
+  // subdomain: z.string()...
+  // If it was valid before, I should keep it.
+  // But createInsertSchema infers optionality from table.
+  // If I use manual z.object, I must specify .optional() or .nullable() if table allows.
+  // Table line 119: subdomain... unique(). (Nullable).
+  // So z.string()...optional().or(z.literal("")).
   contactEmail: z.string().email(),
   contactPhone: z.string().optional(),
   maxUsers: z.string().optional(),
   maxVehicles: z.string().optional(),
-}).omit({
-  id: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateOrganizationSchema = createInsertSchema(organizations)
-  .partial()
-  .extend({
+export const UpdateOrganizationSchema =
+  CreateOrganizationSchema.partial().extend({
     id: z.string(),
   });
 
-export const CreateVehicleSchema = createInsertSchema(vehicles, {
+export const CreateVehicleSchema = z.object({
   licensePlate: z.string().min(5).max(20),
   brand: z.string().min(1).max(50),
   model: z.string().min(1).max(50),
@@ -217,18 +219,11 @@ export const CreateVehicleSchema = createInsertSchema(vehicles, {
   capacityWeight: z.number().min(0).max(50000),
   capacityVolume: z.number().min(0).max(100000),
   notes: z.string().max(500).optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateVehicleSchema = createInsertSchema(vehicles)
-  .partial()
-  .extend({
-    id: z.string(),
-  });
+export const UpdateVehicleSchema = CreateVehicleSchema.partial().extend({
+  id: z.string(),
+});
 
 /**
  * Asset Types Enum
@@ -635,15 +630,10 @@ export const products = pgTable("products", {
     .notNull(),
 });
 
-export const CreateProductSchema = createInsertSchema(products, {
-  name: (schema) => schema.min(2).max(100),
-  price: (schema) => schema.min(0),
-  stock: (schema) => schema.min(0).optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
+export const CreateProductSchema = z.object({
+  name: z.string().min(2).max(100),
+  price: z.number().min(0),
+  stock: z.number().min(0).optional(),
 });
 
 /**
@@ -852,7 +842,7 @@ export const userLegalAcceptances = pgTable("user_legal_acceptances", {
 /**
  * Customer Schemas
  */
-export const CreateCustomerSchema = createInsertSchema(customers, {
+export const CreateCustomerSchema = z.object({
   customerCode: z.string().min(3).max(20),
   businessName: z.string().min(2).max(200).optional(),
   tradeName: z.string().min(2).max(100).optional(),
@@ -861,193 +851,134 @@ export const CreateCustomerSchema = createInsertSchema(customers, {
   phone: z.string().min(10).max(15),
   priority: z.number().min(1).max(5).optional(),
   creditLimit: z.number().min(0).optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateCustomerSchema = createInsertSchema(customers)
-  .partial()
-  .extend({
-    id: z.string(),
-  });
+export const UpdateCustomerSchema = CreateCustomerSchema.partial().extend({
+  id: z.string(),
+});
 
 /**
  * Customer Address Schemas
  */
-export const CreateCustomerAddressSchema = createInsertSchema(
-  customerAddresses,
-  {
-    street: z.string().min(2).max(200),
-    externalNumber: z.string().min(1).max(20),
-    neighborhood: z.string().min(2).max(100),
-    city: z.string().min(2).max(100),
-    municipality: z.string().min(2).max(100),
-    state: z.string().min(2).max(100),
-    postalCode: z.string().min(4).max(10),
-    latitude: z.string().optional(),
-    longitude: z.string().optional(),
-    deliveryInstructions: z.string().max(500).optional(),
-  },
-).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
+export const CreateCustomerAddressSchema = z.object({
+  street: z.string().min(2).max(200),
+  externalNumber: z.string().min(1).max(20),
+  neighborhood: z.string().min(2).max(100),
+  city: z.string().min(2).max(100),
+  municipality: z.string().min(2).max(100),
+  state: z.string().min(2).max(100),
+  postalCode: z.string().min(4).max(10),
+  latitude: z.string().optional(),
+  longitude: z.string().optional(),
+  deliveryInstructions: z.string().max(500).optional(),
 });
 
-export const UpdateCustomerAddressSchema = createInsertSchema(customerAddresses)
-  .partial()
-  .extend({
+export const UpdateCustomerAddressSchema =
+  CreateCustomerAddressSchema.partial().extend({
     id: z.string(),
   });
 
 /**
  * Customer Contact Schemas
  */
-export const CreateCustomerContactSchema = createInsertSchema(
-  customerContacts,
-  {
-    firstName: z.string().min(2).max(50),
-    lastName: z.string().min(2).max(50),
-    email: z.string().email(),
-    phone: z.string().min(10).max(15),
-  },
-).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
+export const CreateCustomerContactSchema = z.object({
+  firstName: z.string().min(2).max(50),
+  lastName: z.string().min(2).max(50),
+  email: z.string().email(),
+  phone: z.string().min(10).max(15),
 });
 
-export const UpdateCustomerContactSchema = createInsertSchema(customerContacts)
-  .partial()
-  .extend({
+export const UpdateCustomerContactSchema =
+  CreateCustomerContactSchema.partial().extend({
     id: z.string(),
   });
 
 /**
  * FAQ Category Schemas
  */
-export const CreateFaqCategorySchema = createInsertSchema(faqCategories, {
+export const CreateFaqCategorySchema = z.object({
   name: z.string().min(2).max(50),
   description: z.string().max(200).optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateFaqCategorySchema = createInsertSchema(faqCategories)
-  .partial()
-  .extend({
+export const UpdateFaqCategorySchema = CreateFaqCategorySchema.partial().extend(
+  {
     id: z.string(),
-  });
+  },
+);
 
 /**
  * FAQ Item Schemas
  */
-export const CreateFaqItemSchema = createInsertSchema(faqItems, {
+export const CreateFaqItemSchema = z.object({
   question: z.string().min(5).max(500),
   answer: z.string().min(10).max(5000),
   keywords: z.string().max(500).optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateFaqItemSchema = createInsertSchema(faqItems)
-  .partial()
-  .extend({
-    id: z.string(),
-  });
+export const UpdateFaqItemSchema = CreateFaqItemSchema.partial().extend({
+  id: z.string(),
+});
 
 /**
  * Support Contact Schemas
  */
-export const CreateSupportContactSchema = createInsertSchema(supportContacts, {
+export const CreateSupportContactSchema = z.object({
   supportPhone: z.string().min(10).max(15),
   supportEmail: z.string().email(),
   supportWhatsapp: z.string().optional(),
   supportHours: z.string().optional(),
   emergencyPhone: z.string().optional(),
   officeAddress: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  updatedAt: true,
 });
 
-export const UpdateSupportContactSchema = createInsertSchema(supportContacts)
-  .partial()
-  .extend({
+export const UpdateSupportContactSchema =
+  CreateSupportContactSchema.partial().extend({
     id: z.string(),
   });
 
 /**
  * Legal Document Schemas
  */
-export const CreateLegalDocumentSchema = createInsertSchema(legalDocuments, {
+export const CreateLegalDocumentSchema = z.object({
   title: z.string().min(5).max(200),
   description: z.string().max(500).optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateLegalDocumentSchema = createInsertSchema(legalDocuments)
-  .partial()
-  .extend({
+export const UpdateLegalDocumentSchema =
+  CreateLegalDocumentSchema.partial().extend({
     id: z.string(),
   });
 
 /**
  * Legal Version Schemas
  */
-export const CreateLegalVersionSchema = createInsertSchema(legalVersions, {
+export const CreateLegalVersionSchema = z.object({
   version: z.string().min(3).max(20),
   content: z.string().min(10),
   changeSummary: z.string().max(1000).optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
 });
 
-export const UpdateLegalVersionSchema = createInsertSchema(legalVersions)
-  .partial()
-  .extend({
+export const UpdateLegalVersionSchema =
+  CreateLegalVersionSchema.partial().extend({
     id: z.string(),
   });
 
 /**
  * App Version Schemas
  */
-export const CreateAppVersionSchema = createInsertSchema(appVersions, {
+export const CreateAppVersionSchema = z.object({
   versionCode: z.string().min(3).max(20),
   versionNumber: z.number(),
   downloadUrl: z.string().optional(),
   storeUrl: z.string().optional(),
   minOsVersion: z.string().optional(),
   releaseNotes: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
 });
 
-export const UpdateAppVersionSchema = createInsertSchema(appVersions)
-  .partial()
-  .extend({
-    id: z.string(),
-  });
+export const UpdateAppVersionSchema = CreateAppVersionSchema.partial().extend({
+  id: z.string(),
+});
 
 // ============================================================================
 // EPIC 4: Order Lifecycle & Fulfillment
@@ -1516,57 +1447,32 @@ export const generatedReports = pgTable("generated_reports", {
 /**
  * Return Load Schema
  */
-export const CreateReturnLoadSchema = createInsertSchema(returnLoads, {
+export const CreateReturnLoadSchema = z.object({
   notes: z.string().optional(),
   discrepancyNotes: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateReturnLoadSchema = createInsertSchema(returnLoads)
-  .partial()
-  .extend({
-    id: z.string(),
-  });
+export const UpdateReturnLoadSchema = CreateReturnLoadSchema.partial().extend({
+  id: z.string(),
+});
 
 /**
  * Return Load Item Schema
  */
-export const CreateReturnLoadItemSchema = createInsertSchema(returnLoadItems, {
+export const CreateReturnLoadItemSchema = z.object({
   serialNumber: z.string().optional(),
   notes: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  createdAt: true,
 });
 
 /**
  * Billing Request Schema
  */
-export const CreateBillingRequestSchema = createInsertSchema(billingRequests, {
+export const CreateBillingRequestSchema = z.object({
   notes: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  requestDate: true,
-  status: true,
-  invoiceNumber: true,
-  invoiceDate: true,
-  pdfUrl: true,
-  xmlUrl: true,
-  processedBy: true,
-  processedAt: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateBillingRequestSchema = createInsertSchema(billingRequests)
-  .partial()
-  .extend({
+export const UpdateBillingRequestSchema =
+  CreateBillingRequestSchema.partial().extend({
     id: z.string(),
   });
 
@@ -1574,7 +1480,7 @@ export const UpdateBillingRequestSchema = createInsertSchema(billingRequests)
  * Generate Report Schema
  */
 export const GenerateReportSchema = z.object({
-  reportType: reportTypeEnum,
+  reportType: z.enum(reportTypeEnum.enumValues),
   reportName: z.string().min(3).max(100),
   dateFrom: z.date(),
   dateTo: z.date(),
@@ -1793,6 +1699,7 @@ export const messages = pgTable("messages", {
   // Sender
   senderId: text("sender_id").notNull(),
   senderRole: text("sender_role").notNull(),
+  recipientId: text("recipient_id").notNull(),
 
   // Content
   type: messageTypeEnum("message_type").default("text").notNull(),
@@ -1808,6 +1715,7 @@ export const messages = pgTable("messages", {
   // Status
   isRead: integer("is_read").default(0).notNull(),
   readBy: text("read_by"), // JSON array of user IDs who read
+  readAt: timestamp("read_at"),
 
   createdAt: timestamp("created_at").defaultNow().notNull(),
 });
@@ -1819,65 +1727,42 @@ export const messages = pgTable("messages", {
 /**
  * Vehicle Tracking Schemas
  */
-export const CreateVehicleTrackingSchema = createInsertSchema(vehicleTracking, {
+export const CreateVehicleTrackingSchema = z.object({
   latitude: z.string().regex(/^-?\d+(\.\d+)?$/),
   longitude: z.string().regex(/^-?\d+(\.\d+)?$/),
   accuracy: z.string().optional(),
   speed: z.string().optional(),
   heading: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  recordedAt: true,
-  serverReceivedAt: true,
 });
 
-export const UpdateVehicleTrackingSchema = createInsertSchema(vehicleTracking)
-  .partial()
-  .extend({
+export const UpdateVehicleTrackingSchema =
+  CreateVehicleTrackingSchema.partial().extend({
     id: z.string(),
   });
 
 /**
  * Device Token Schemas
  */
-export const CreateDeviceTokenSchema = createInsertSchema(deviceTokens, {
+export const CreateDeviceTokenSchema = z.object({
   deviceToken: z.string().min(10),
   deviceId: z.string().optional(),
   deviceName: z.string().optional(),
   appVersion: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  isActive: true,
-  lastUsedAt: true,
-  createdAt: true,
-  updatedAt: true,
 });
 
-export const UpdateDeviceTokenSchema = createInsertSchema(deviceTokens)
-  .partial()
-  .extend({
+export const UpdateDeviceTokenSchema = CreateDeviceTokenSchema.partial().extend(
+  {
     id: z.string(),
-  });
+  },
+);
 
 /**
  * Notification Schemas
  */
-export const CreateNotificationSchema = createInsertSchema(notifications, {
+export const CreateNotificationSchema = z.object({
   title: z.string().min(1).max(100),
   body: z.string().min(1).max(500),
   data: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  status: true,
-  sentAt: true,
-  deliveredAt: true,
-  readAt: true,
-  errorMessage: true,
-  retryCount: true,
-  createdAt: true,
 });
 
 /**
@@ -1897,20 +1782,11 @@ export const ProximitySearchSchema = z.object({
 /**
  * Message Schemas
  */
-export const CreateMessageSchema = createInsertSchema(messages, {
+export const CreateMessageSchema = z.object({
   content: z.string().min(1).max(2000),
   attachments: z.string().optional(),
   latitude: z.string().optional(),
   longitude: z.string().optional(),
-}).omit({
-  id: true,
-  tenantId: true,
-  conversationId: true,
-  senderId: true,
-  senderRole: true,
-  isRead: true,
-  readBy: true,
-  createdAt: true,
 });
 
 // ============================================================================

@@ -40,7 +40,7 @@ const faqFormSchema = z.object({
   answer: z.string().min(10, "La respuesta debe tener al menos 10 caracteres"),
   categoryId: z.string().min(1, "Debes seleccionar una categoría"),
   keywords: z.string().optional(),
-  isFeatured: z.boolean().default(false),
+  isFeatured: z.boolean(),
 });
 
 type FaqFormValues = z.infer<typeof faqFormSchema>;

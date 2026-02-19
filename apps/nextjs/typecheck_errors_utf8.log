@@ -1,0 +1,12 @@
+﻿
+> @acme/nextjs@ typecheck C:\antigravity\gasera\apps\nextjs
+> tsc --noEmit
+
+src/app/dashboard/customers/[id]/edit/page.tsx(158,7): error TS2345: Argument of type '{ customerType: any; businessName: string; tradeName: string; taxId: string; email: string; phone: string; alternatePhone: string; notes: string; status: string; id: string; }' is not assignable to parameter of type '{ id: string; email?: string | undefined; status?: "active" | "suspended" | "inactive" | "prospect" | undefined; notes?: string | undefined; customerType?: "residential" | "corporate" | "government" | undefined; ... 4 more ...; alternatePhone?: string | undefined; }'.
+  Types of property 'status' are incompatible.
+    Type 'string' is not assignable to type '"active" | "suspended" | "inactive" | "prospect" | undefined'.
+src/app/dashboard/fleet/page.tsx(158,39): error TS2339: Property 'lastLocationUpdate' does not exist on type '{ vehicleId: string; vehicleName: string; latitude: string | null; longitude: string | null; status: "in_route" | "loading" | "idle" | "problem" | "offline"; speed: string; batteryLevel: string; updatedAt: Date | null; }'.
+src/app/dashboard/support/faq/page.tsx(475,7): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.
+

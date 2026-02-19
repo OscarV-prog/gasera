@@ -77,7 +77,9 @@ export default function NewOrderPage() {
     api.orders.create.mutationOptions({
       onSuccess: (data) => {
         toast.success("Pedido creado exitosamente");
-        router.push(`/dashboard/orders/${data.id}`);
+        if (data?.id) {
+          router.push(`/dashboard/orders/${data.id}`);
+        }
       },
       onError: (err) => {
         toast.error(`Error al crear pedido: ${err.message}`);
@@ -122,7 +124,7 @@ export default function NewOrderPage() {
     createMutation.mutate({
       customerId,
       addressId,
-      requestedDeliveryDate: new Date(requestedDate),
+      requestedDeliveryDate: new Date(requestedDate as any),
       requestedDeliveryTime: requestedTime,
       priority: priority,
       items: items.map((item) => ({

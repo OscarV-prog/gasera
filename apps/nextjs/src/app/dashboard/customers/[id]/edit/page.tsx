@@ -101,9 +101,7 @@ export default function EditCustomerPage({
     }
   }, [customerQuery.data]);
 
-  const updateMutation = useMutation(
-    api.customers.update.mutationOptions() as any,
-  );
+  const updateMutation = useMutation(api.customers.update.mutationOptions());
 
   const addAddressMutation = useMutation(
     api.customers.addAddress.mutationOptions(),
@@ -160,7 +158,8 @@ export default function EditCustomerPage({
       {
         id: params.id,
         ...formData,
-        customerType,
+        status: formData.status as any,
+        customerType: customerType as any,
       },
       {
         onSuccess: () => {

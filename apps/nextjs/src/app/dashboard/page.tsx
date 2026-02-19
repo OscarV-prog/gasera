@@ -26,6 +26,14 @@ export default function DashboardPage() {
     api.customers.list.queryOptions({ limit: 1 }),
   );
 
+  const { data: driversData, isLoading: isDriversLoading } = useQuery(
+    api.fleetDrivers.list.queryOptions({ limit: 1 }),
+  );
+
+  const { data: productsData, isLoading: isProductsLoading } = useQuery(
+    api.products.list.queryOptions({ limit: 1 }),
+  );
+
   return (
     <div className="space-y-8">
       <div>
@@ -59,14 +67,18 @@ export default function DashboardPage() {
         />
         <StatCard
           title="Choferes"
-          value="24"
+          value={
+            isDriversLoading ? "..." : (driversData?.total.toString() ?? "0")
+          }
           description="Choferes disponibles"
           icon={<Truck className="h-6 w-6 text-green-600" />}
           bgColor="bg-green-50 dark:bg-green-950"
         />
         <StatCard
           title="Productos"
-          value="8"
+          value={
+            isProductsLoading ? "..." : (productsData?.total.toString() ?? "0")
+          }
           description="Productos en catálogo"
           icon={<LayoutDashboard className="h-6 w-6 text-orange-600" />}
           bgColor="bg-orange-50 dark:bg-orange-950"

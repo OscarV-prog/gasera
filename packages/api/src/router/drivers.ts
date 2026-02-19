@@ -22,55 +22,68 @@ export const driversRouter = createTRPCRouter({
       }),
     )
     .query(async ({ ctx, input }) => {
-      const tenantId = ctx.session.user.tenantId;
-      if (!tenantId) return { data: [], total: 0 };
+      console.log("drivers.list: starting request", {
+        input,
+        userId: ctx.session.user.id,
+      });
+      try {
+        const tenantId = ctx.session.user.tenantId;
+        if (!tenantId) {
+          console.log("drivers.list: No tenantId found");
+          return { data: [], total: 0 };
+        }
 
-      const conditions = [eq(drivers.tenantId, tenantId)];
+        const conditions = [eq(drivers.tenantId, tenantId)];
 
-      if (input.search) {
-        conditions.push(
-          or(
-            ilike(drivers.name, `%${input.search}%`),
-            ilike(drivers.email, `%${input.search}%`),
-            ilike(drivers.phone, `%${input.search}%`),
-          )!,
-        );
+        if (input.search) {
+          conditions.push(
+            or(
+              ilike(drivers.name, `%${input.search}%`),
+              ilike(drivers.email, `%${input.search}%`),
+              ilike(drivers.phone, `%${input.search}%`),
+            )!,
+          );
+        }
+
+        if (input.status && input.status !== "all") {
+          conditions.push(eq(drivers.status, input.status));
+        }
+
+        const [total] = await db
+          .select({ count: sql<number>`count(*)` })
+          .from(drivers)
+          .where(and(...conditions));
+
+        const items = await db
+          .select({
+            id: drivers.id,
+            tenantId: drivers.tenantId,
+            name: drivers.name,
+            email: drivers.email,
+            phone: drivers.phone,
+            licenseNumber: drivers.licenseNumber,
+            assignedUnitId: drivers.assignedUnitId,
+            status: drivers.status,
+            createdAt: drivers.createdAt,
+            updatedAt: drivers.updatedAt,
+            vehicleLicensePlate: vehicles.licensePlate,
+          })
+          .from(drivers)
+          .leftJoin(vehicles, eq(drivers.assignedUnitId, vehicles.id))
+          .where(and(...conditions))
+          .limit(input.limit)
+          .offset(input.offset)
+          .orderBy(desc(drivers.createdAt));
+
+        console.log("drivers.list: success, found", items.length, "drivers");
+        return {
+          data: items,
+          total: Number(total?.count ?? 0),
+        };
+      } catch (error: any) {
+        console.error("drivers.list error:", error);
+        throw error;
       }
-
-      if (input.status && input.status !== "all") {
-        conditions.push(eq(drivers.status, input.status));
-      }
-
-      const [total] = await db
-        .select({ count: sql<number>`count(*)` })
-        .from(drivers)
-        .where(and(...conditions));
-
-      const items = await db
-        .select({
-          id: drivers.id,
-          tenantId: drivers.tenantId,
-          name: drivers.name,
-          email: drivers.email,
-          phone: drivers.phone,
-          licenseNumber: drivers.licenseNumber,
-          assignedUnitId: drivers.assignedUnitId,
-          status: drivers.status,
-          createdAt: drivers.createdAt,
-          updatedAt: drivers.updatedAt,
-          vehicleLicensePlate: vehicles.licensePlate,
-        })
-        .from(drivers)
-        .leftJoin(vehicles, eq(drivers.assignedUnitId, vehicles.id))
-        .where(and(...conditions))
-        .limit(input.limit)
-        .offset(input.offset)
-        .orderBy(desc(drivers.createdAt));
-
-      return {
-        data: items,
-        total: Number(total?.count ?? 0),
-      };
     }),
 
   /**

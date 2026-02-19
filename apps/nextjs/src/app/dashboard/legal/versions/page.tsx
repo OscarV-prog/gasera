@@ -77,7 +77,7 @@ export default function AppVersionsPage() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {data?.data?.map((version: any) => (
+              {data?.map((version: any) => (
                 <TableRow key={version.id}>
                   <TableCell className="font-medium">
                     {version.platform === "driver_app"

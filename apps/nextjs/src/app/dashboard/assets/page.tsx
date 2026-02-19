@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import { useQuery } from "@tanstack/react-query";
+import { useMutation, useQuery, useQueryClient } from "@tanstack/react-query";
 
 import {
   Button,
@@ -58,22 +58,24 @@ export default function AssetsPage() {
     }),
   );
 
-  const deleteMutation = api.assets.delete.useMutation({
-    onSuccess: () => {
-      toast.success("Asset deleted successfully");
-      void assetsQuery.refetch();
-    },
-    onError: (error: { message?: string }) => {
-      toast.error(error.message ?? "Failed to delete asset");
-    },
-  });
+  const { mutate: deleteMutation } = useMutation(
+    api.assets.delete.mutationOptions({
+      onSuccess: () => {
+        toast.success("Asset deleted successfully");
+        void assetsQuery.refetch();
+      },
+      onError: (error: { message?: string }) => {
+        toast.error(error.message ?? "Failed to delete asset");
+      },
+    }),
+  );
 
   const assets = assetsQuery.data?.items || [];
   const isLoading = assetsQuery.isLoading;
 
   const handleDelete = (id: string) => {
     if (confirm("Are you sure you want to delete this asset?")) {
-      deleteMutation.mutate({ id });
+      deleteMutation({ id });
     }
   };
 

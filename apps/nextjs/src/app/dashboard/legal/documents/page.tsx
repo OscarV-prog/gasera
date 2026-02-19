@@ -48,7 +48,7 @@ export default function LegalDocumentsPage() {
               </TableRow>
             </TableHeader>
             <TableBody>
-              {data?.data?.map((doc: any) => (
+              {data?.map((doc: any) => (
                 <TableRow key={doc.id}>
                   <TableCell className="font-medium">
                     {doc.documentType}

@@ -77,7 +77,9 @@ export default function ReconciliationPage() {
         />
         <StatusCard
           label="Discrepancias"
-          value={data?.loads.filter((l) => l.totalMissing > 0).length ?? 0}
+          value={
+            data?.loads.filter((l) => (l.totalMissing ?? 0) > 0).length ?? 0
+          }
           icon={<AlertTriangle className="h-4 w-4 text-red-500" />}
           bgColor="bg-red-50"
         />
@@ -150,10 +152,10 @@ export default function ReconciliationPage() {
                     {load.totalEmptyReturned}
                   </TableCell>
                   <TableCell className="text-center font-bold text-red-600">
-                    {load.totalMissing + load.totalDamaged > 0 ? (
+                    {(load.totalMissing ?? 0) + (load.totalDamaged ?? 0) > 0 ? (
                       <span className="flex items-center justify-center gap-1 text-red-600">
                         <AlertTriangle className="h-3 w-3" />
-                        {load.totalMissing + load.totalDamaged}
+                        {(load.totalMissing ?? 0) + (load.totalDamaged ?? 0)}
                       </span>
                     ) : (
                       "0"

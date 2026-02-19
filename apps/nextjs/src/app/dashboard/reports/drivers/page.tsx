@@ -51,7 +51,6 @@ export default function DriverReportsPage() {
     api.reports.listDriverReports.queryOptions({
       search: search || undefined,
       status: statusFilter !== "all" ? statusFilter : undefined,
-      priority: priorityFilter !== "all" ? priorityFilter : undefined,
       limit,
       offset: (page - 1) * limit,
     }),

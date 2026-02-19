@@ -44,7 +44,12 @@ export default function EditFaqPage({
           Modifica el contenido de la pregunta frecuente.
         </p>
       </div>
-      <FaqForm initialData={item} />
+      <FaqForm
+        initialData={{
+          ...item,
+          keywords: item.keywords ?? undefined,
+        }}
+      />
     </div>
   );
 }

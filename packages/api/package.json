@@ -4,7 +4,7 @@
   "type": "module",
   "exports": {
     ".": {
-      "types": "./dist/index.d.ts",
+      "types": "./src/index.ts",
       "default": "./src/index.ts"
     }
   },
@@ -26,6 +26,7 @@
     "@better-auth/core": "1.4.0-beta.9",
     "@trpc/server": "catalog:",
     "better-auth": "catalog:",
+    "drizzle-orm": "^0.44.7",
     "superjson": "2.2.3",
     "zod": "catalog:"
   },

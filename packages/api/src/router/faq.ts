@@ -281,7 +281,11 @@ export const faqRouter = createTRPCRouter({
       ]);
 
       return {
-        data,
+        data: data.map((item) => ({
+          ...item,
+          isActive: Boolean(item.isActive),
+          isFeatured: Boolean(item.isFeatured),
+        })),
         total: total.length ? Number(total[0]?.count ?? 0) : 0,
         page,
         limit,
@@ -325,7 +329,11 @@ export const faqRouter = createTRPCRouter({
       //   .set({ views: (item.views ?? 0) + 1 })
       //   .where(eq(faqItems.id, input.id));
 
-      return item;
+      return {
+        ...item,
+        isActive: Boolean(item.isActive),
+        isFeatured: Boolean(item.isFeatured),
+      };
     }),
 
   /**

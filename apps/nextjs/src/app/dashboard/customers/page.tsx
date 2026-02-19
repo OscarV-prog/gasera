@@ -57,9 +57,7 @@ export default function CustomersPage() {
     }),
   );
 
-  const deleteMutation = useMutation(
-    api.customers.delete.mutationOptions() as any,
-  );
+  const deleteMutation = useMutation(api.customers.delete.mutationOptions());
 
   const handleDelete = (id: string) => {
     if (confirm("¿Estás seguro de que deseas eliminar este cliente?")) {

@@ -1,0 +1,312 @@
+﻿
+> @acme/nextjs@ typecheck C:\antigravity\gasera\apps\nextjs
+> tsc --noEmit
+
+src/app/_components/posts.tsx(54,43): error TS2345: Argument of type '{ content: string; title: string; }' is not assignable to parameter of type '{ tenantId: string; title: string; content: string; }'.
+  Property 'tenantId' is missing in type '{ content: string; title: string; }' but required in type '{ tenantId: string; title: string; content: string; }'.
+src/app/dashboard/assets/page.tsx(61,44): error TS2339: Property 'useMutation' does not exist on type 'DecorateMutationProcedure<{ input: { id: string; }; output: { success: boolean; }; transformer: true; errorShape: { data: { zodError: any; code: "BAD_REQUEST" | "UNAUTHORIZED" | "PAYMENT_REQUIRED" | "FORBIDDEN" | "NOT_FOUND" | ... 15 more ... | "CLIENT_CLOSED_REQUEST"; httpStatus: number; path?: string | undefined; ...'.
+src/app/dashboard/customers/[id]/edit/page.tsx(105,19): error TS2339: Property 'update' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } & { ......'.
+src/app/dashboard/customers/[id]/edit/page.tsx(160,7): error TS2345: Argument of type '{ customerType: "residential" | "corporate" | "government"; businessName: string; tradeName: string; taxId: string; email: string; phone: string; alternatePhone: string; notes: string; status: string; id: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/customers/page.tsx(61,19): error TS2339: Property 'delete' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } & { ......'.
+src/app/dashboard/customers/page.tsx(67,9): error TS2345: Argument of type '{ id: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/deliveries/[id]/page.tsx(114,16): error TS2339: Property 'getById' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } & { ......'.
+src/app/dashboard/deliveries/[id]/page.tsx(119,9): error TS2551: Property 'drivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'. Did you mean 'driver'?
+src/app/dashboard/deliveries/[id]/page.tsx(120,24): error TS2339: Property 'assignedDriverId' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(121,31): error TS2339: Property 'assignedDriverId' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(128,24): error TS2339: Property 'assignedVehicleId' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(129,31): error TS2339: Property 'assignedVehicleId' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(169,24): error TS2339: Property 'id' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(170,33): error TS2339: Property 'orderNumber' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(171,28): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(173,34): error TS2339: Property 'customer' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(174,32): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(174,61): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(174,99): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(176,33): error TS2339: Property 'name' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(178,31): error TS2339: Property 'totalAmount' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(180,27): error TS2339: Property 'items' does not exist on type '{}'.
+src/app/dashboard/deliveries/[id]/page.tsx(181,29): error TS2339: Property 'history' does not exist on type '{}'.
+src/app/dashboard/deliveries/page.tsx(78,16): error TS2339: Property 'listDeliveries' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } & { ......'.
+src/app/dashboard/deliveries/page.tsx(91,21): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/deliveries/page.tsx(91,31): error TS7006: Parameter 'order' implicitly has an 'any' type.
+src/app/dashboard/deliveries/page.tsx(165,25): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/deliveries/page.tsx(165,42): error TS7006: Parameter 'd' implicitly has an 'any' type.
+src/app/dashboard/dispatch/page.tsx(36,21): error TS2339: Property 'useUtils' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/dispatch/page.tsx(43,39): error TS2339: Property 'transitionStatus' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } & { ......'.
+src/app/dashboard/dispatch/page.tsx(48,15): error TS7006: Parameter 'err' implicitly has an 'any' type.
+src/app/dashboard/drivers/[id]/edit/page.tsx(50,9): error TS2339: Property 'fleetDrivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(60,17): error TS2339: Property 'name' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(61,18): error TS2339: Property 'email' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(62,18): error TS2339: Property 'phone' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(63,26): error TS2339: Property 'licenseNumber' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(64,27): error TS2339: Property 'assignedUnitId' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(65,19): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(71,9): error TS2339: Property 'fleetDrivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/drivers/[id]/edit/page.tsx(95,27): error TS2345: Argument of type '{ assignedUnitId: string | undefined; name: string; email: string; phone: string; licenseNumber: string; status: string; id: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/drivers/[id]/page.tsx(49,9): error TS2339: Property 'fleetDrivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/drivers/[id]/page.tsx(95,26): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(100,25): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(104,23): error TS2339: Property 'name' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(110,52): error TS2339: Property 'id' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(144,35): error TS2339: Property 'email' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(148,35): error TS2339: Property 'phone' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(161,31): error TS2339: Property 'licenseNumber' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(181,27): error TS2339: Property 'totalDeliveries' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(192,34): error TS2339: Property 'rating' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(235,37): error TS2339: Property 'currentLocation' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(300,27): error TS2339: Property 'assignedUnitId' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(308,44): error TS2339: Property 'assignedUnitId' does not exist on type '{}'.
+src/app/dashboard/drivers/[id]/page.tsx(311,53): error TS2339: Property 'assignedUnitId' does not exist on type '{}'.
+src/app/dashboard/drivers/new/page.tsx(48,9): error TS2339: Property 'fleetDrivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/drivers/new/page.tsx(72,27): error TS2345: Argument of type '{ assignedUnitId: string | undefined; name: string; email: string; phone: string; licenseNumber: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/drivers/page.tsx(51,9): error TS2339: Property 'fleetDrivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/drivers/page.tsx(62,9): error TS2339: Property 'fleetDrivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/drivers/page.tsx(75,29): error TS2345: Argument of type '{ id: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/drivers/page.tsx(79,28): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/drivers/page.tsx(79,51): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/drivers/page.tsx(144,24): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/drivers/page.tsx(144,37): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/drivers/page.tsx(154,20): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/drivers/page.tsx(154,30): error TS7006: Parameter 'driver' implicitly has an 'any' type.
+src/app/dashboard/drivers/page.tsx(264,9): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+src/app/dashboard/drivers/page.tsx(268,52): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/faqs/[id]/page.tsx(47,16): error TS2322: Type '{ id: string; tenantId: string; categoryId: string; question: string; answer: string; keywords: string | null; views: number; isActive: number; isFeatured: number; createdAt: Date; updatedAt: Date; }' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; } & { id: string; }'.
+  Type '{ id: string; tenantId: string; categoryId: string; question: string; answer: string; keywords: string | null; views: number; isActive: number; isFeatured: number; createdAt: Date; updatedAt: Date; }' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }'.
+    Types of property 'isFeatured' are incompatible.
+      Type 'number' is not assignable to type 'boolean'.
+src/app/dashboard/faqs/_components/faq-form.tsx(57,5): error TS2322: Type 'Resolver<{ categoryId: string; question: string; answer: string; isFeatured?: boolean | undefined; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+  Types of parameters 'options' and 'options' are incompatible.
+    Type 'ResolverOptions<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>' is not assignable to type 'ResolverOptions<{ categoryId: string; question: string; answer: string; isFeatured?: boolean | undefined; keywords?: string | undefined; }>'.
+      Type 'boolean | undefined' is not assignable to type 'boolean'.
+        Type 'undefined' is not assignable to type 'boolean'.
+src/app/dashboard/faqs/_components/faq-form.tsx(137,41): error TS2345: Argument of type '(data: FaqFormValues) => void' is not assignable to parameter of type 'SubmitHandler<TFieldValues>'.
+  Types of parameters 'data' and 'data' are incompatible.
+    Type 'TFieldValues' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }'.
+      Type 'FieldValues' is missing the following properties from type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }': categoryId, isFeatured, question, answer
+src/app/dashboard/faqs/_components/faq-form.tsx(148,15): error TS2322: Type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+  The types of '_options.resolver' are incompatible between these types.
+    Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues> | undefined' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | undefined'.
+      Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+        Type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, TFieldValues> | Promise<ResolverResult<{ ...; }, TFieldValues>>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+          Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+            Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverSuccess<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+              Type 'TFieldValues' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }'.
+                Type 'FieldValues' is missing the following properties from type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }': categoryId, isFeatured, question, answer
+src/app/dashboard/faqs/_components/faq-form.tsx(186,15): error TS2322: Type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+  The types of '_options.resolver' are incompatible between these types.
+    Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues> | undefined' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | undefined'.
+      Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+        Type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, TFieldValues> | Promise<ResolverResult<{ ...; }, TFieldValues>>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+          Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+            Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverSuccess<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+              Type 'TFieldValues' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }'.
+                Type 'FieldValues' is missing the following properties from type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }': categoryId, isFeatured, question, answer
+src/app/dashboard/faqs/_components/faq-form.tsx(203,15): error TS2322: Type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+  The types of '_options.resolver' are incompatible between these types.
+    Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues> | undefined' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | undefined'.
+      Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+        Type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, TFieldValues> | Promise<ResolverResult<{ ...; }, TFieldValues>>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+          Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+            Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverSuccess<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+              Type 'TFieldValues' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }'.
+                Type 'FieldValues' is missing the following properties from type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }': categoryId, isFeatured, question, answer
+src/app/dashboard/faqs/_components/faq-form.tsx(222,17): error TS2322: Type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+  The types of '_options.resolver' are incompatible between these types.
+    Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues> | undefined' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | undefined'.
+      Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+        Type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, TFieldValues> | Promise<ResolverResult<{ ...; }, TFieldValues>>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+          Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+            Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverSuccess<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+              Type 'TFieldValues' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }'.
+                Type 'FieldValues' is missing the following properties from type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }': categoryId, isFeatured, question, answer
+src/app/dashboard/faqs/_components/faq-form.tsx(239,17): error TS2322: Type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Control<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+  The types of '_options.resolver' are incompatible between these types.
+    Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues> | undefined' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | undefined'.
+      Type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, TFieldValues>' is not assignable to type 'Resolver<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, any, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+        Type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, TFieldValues> | Promise<ResolverResult<{ ...; }, TFieldValues>>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+          Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverResult<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }, { categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }> | Promise<...>'.
+            Type 'ResolverSuccess<TFieldValues>' is not assignable to type 'ResolverSuccess<{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }>'.
+              Type 'TFieldValues' is not assignable to type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }'.
+                Type 'FieldValues' is missing the following properties from type '{ categoryId: string; isFeatured: boolean; question: string; answer: string; keywords?: string | undefined; }': categoryId, isFeatured, question, answer
+src/app/dashboard/faqs/page.tsx(187,29): error TS2339: Property 'categoryName' does not exist on type '{ id: string; tenantId: string; categoryId: string; question: string; answer: string; keywords: string | null; views: number; isActive: number; isFeatured: number; createdAt: Date; updatedAt: Date; }'.
+src/app/dashboard/fleet/page.tsx(151,21): error TS2769: No overload matches this call.
+  Overload 1 of 2, '(props: FleetMapProps, context?: any): string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | ... 4 more ... | undefined', gave the following error.
+    Type '{ vehicleId: string; vehicleName: string; latitude: string | null; longitude: string | null; status: "idle" | "offline" | "loading" | "in_route" | "problem"; speed: string; batteryLevel: string; updatedAt: Date | null; }[]' is not assignable to type 'Vehicle[]'.
+      Type '{ vehicleId: string; vehicleName: string; latitude: string | null; longitude: string | null; status: "idle" | "offline" | "loading" | "in_route" | "problem"; speed: string; batteryLevel: string; updatedAt: Date | null; }' is not assignable to type 'Vehicle'.
+        Types of property 'latitude' are incompatible.
+          Type 'string | null' is not assignable to type 'number'.
+            Type 'null' is not assignable to type 'number'.
+  Overload 2 of 2, '(props: FleetMapProps): string | number | bigint | boolean | ReactElement<unknown, string | JSXElementConstructor<any>> | ... 4 more ... | undefined', gave the following error.
+    Type '{ vehicleId: string; vehicleName: string; latitude: string | null; longitude: string | null; status: "idle" | "offline" | "loading" | "in_route" | "problem"; speed: string; batteryLevel: string; updatedAt: Date | null; }[]' is not assignable to type 'Vehicle[]'.
+      Type '{ vehicleId: string; vehicleName: string; latitude: string | null; longitude: string | null; status: "idle" | "offline" | "loading" | "in_route" | "problem"; speed: string; batteryLevel: string; updatedAt: Date | null; }' is not assignable to type 'Vehicle'.
+        Types of property 'latitude' are incompatible.
+          Type 'string | null' is not assignable to type 'number'.
+            Type 'null' is not assignable to type 'number'.
+src/app/dashboard/legal/documents/page.tsx(51,22): error TS2339: Property 'data' does not exist on type '{ id: string; tenantId: string; documentType: "privacy_policy" | "terms_of_service" | "cookie_policy" | "disclaimer"; title: string; description: string | null; currentVersion: string; isActive: number; createdAt: Date; updatedAt: Date; }[]'.
+src/app/dashboard/legal/versions/page.tsx(80,22): error TS2339: Property 'data' does not exist on type '{ id: string; tenantId: string; platform: "driver_app" | "client_app"; versionCode: string; versionNumber: number; downloadUrl: string | null; storeUrl: string | null; minOsVersion: string | null; ... 5 more ...; createdAt: Date; }[]'.
+src/app/dashboard/messages/page.tsx(28,21): error TS2339: Property 'useUtils' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/messages/page.tsx(38,9): error TS2339: Property 'messages' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/messages/page.tsx(42,9): error TS2339: Property 'messages' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/messages/page.tsx(45,35): error TS2339: Property 'messages' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/messages/page.tsx(53,15): error TS7006: Parameter 'err' implicitly has an 'any' type.
+src/app/dashboard/messages/page.tsx(58,32): error TS2339: Property 'messages' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/messages/page.tsx(64,48): error TS2339: Property 'messages' does not exist on type '{}'.
+src/app/dashboard/messages/page.tsx(67,26): error TS7006: Parameter 'm' implicitly has an 'any' type.
+src/app/dashboard/messages/page.tsx(86,40): error TS7006: Parameter 'm' implicitly has an 'any' type.
+src/app/dashboard/messages/page.tsx(88,43): error TS7006: Parameter 'm' implicitly has an 'any' type.
+src/app/dashboard/messages/page.tsx(131,34): error TS2339: Property 'map' does not exist on type '{}'.
+src/app/dashboard/messages/page.tsx(131,39): error TS7006: Parameter 'user' implicitly has an 'any' type.
+src/app/dashboard/messages/page.tsx(242,30): error TS7006: Parameter 'message' implicitly has an 'any' type.
+src/app/dashboard/operations/reconciliation/page.tsx(80,44): error TS18047: 'l.totalMissing' is possibly 'null'.
+src/app/dashboard/operations/reconciliation/page.tsx(153,22): error TS18047: 'load.totalMissing' is possibly 'null'.
+src/app/dashboard/operations/reconciliation/page.tsx(153,42): error TS18047: 'load.totalDamaged' is possibly 'null'.
+src/app/dashboard/operations/reconciliation/page.tsx(156,26): error TS18047: 'load.totalMissing' is possibly 'null'.
+src/app/dashboard/operations/reconciliation/page.tsx(156,46): error TS18047: 'load.totalDamaged' is possibly 'null'.
+src/app/dashboard/orders/[id]/page.tsx(47,27): error TS2339: Property 'getById' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } & { ......'.
+src/app/dashboard/orders/[id]/page.tsx(50,16): error TS2339: Property 'transitionStatus' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } & { ......'.
+src/app/dashboard/orders/[id]/page.tsx(56,17): error TS7006: Parameter 'err' implicitly has an 'any' type.
+src/app/dashboard/orders/[id]/page.tsx(94,31): error TS2345: Argument of type '{ orderId: string; newStatus: any; notes: string | undefined; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/orders/[id]/page.tsx(114,24): error TS2339: Property 'orderNumber' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(117,105): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(119,24): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(123,26): error TS2339: Property 'id' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(157,24): error TS2339: Property 'items' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(190,40): error TS2339: Property 'totalAmount' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(195,37): error TS2339: Property 'totalAmount' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(201,37): error TS2339: Property 'totalAmount' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(219,26): error TS2339: Property 'history' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(222,40): error TS2339: Property 'history' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(297,43): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(323,43): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(346,28): error TS2339: Property 'customer' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(346,59): error TS2339: Property 'customer' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(349,57): error TS2339: Property 'customer' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(364,28): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(364,52): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(365,28): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(367,28): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(367,50): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(368,28): error TS2339: Property 'address' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(380,37): error TS2339: Property 'requestedDate' does not exist on type '{}'.
+src/app/dashboard/orders/[id]/page.tsx(382,26): error TS2339: Property 'priority' does not exist on type '{}'.
+src/app/dashboard/orders/new/page.tsx(80,42): error TS18048: 'data' is possibly 'undefined'.
+src/app/dashboard/orders/new/page.tsx(125,39): error TS2769: No overload matches this call.
+  Overload 1 of 4, '(value: string | number | Date): Date', gave the following error.
+    Argument of type 'string | undefined' is not assignable to parameter of type 'string | number | Date'.
+      Type 'undefined' is not assignable to type 'string | number | Date'.
+  Overload 2 of 4, '(value: string | number): Date', gave the following error.
+    Argument of type 'string | undefined' is not assignable to parameter of type 'string | number'.
+      Type 'undefined' is not assignable to type 'string | number'.
+src/app/dashboard/products/[id]/edit/page.tsx(31,9): error TS2339: Property 'products' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/products/[id]/edit/page.tsx(52,23): error TS2339: Property 'name' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(53,30): error TS2339: Property 'description' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(54,27): error TS2339: Property 'category' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(55,31): error TS2339: Property 'price' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(56,24): error TS2339: Property 'stock' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(56,56): error TS2339: Property 'stock' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(57,23): error TS2339: Property 'unit' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(58,25): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/products/[id]/edit/page.tsx(64,9): error TS2339: Property 'products' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/products/[id]/edit/page.tsx(69,17): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/app/dashboard/products/[id]/edit/page.tsx(77,27): error TS2345: Argument of type '{ name: string; description: string; category: "gas-lp" | "gas-estacionario" | "servicios" | "accesorios" | "otro"; price: number; stock: number | undefined; unit: string; status: "active" | "inactive"; id: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/products/[id]/edit/page.tsx(133,22): error TS2339: Property 'name' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(55,9): error TS2339: Property 'products' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/products/[id]/page.tsx(59,9): error TS2339: Property 'products' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/products/[id]/page.tsx(64,17): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/app/dashboard/products/[id]/page.tsx(114,24): error TS2339: Property 'name' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(117,32): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(119,25): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(124,24): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(155,30): error TS2339: Property 'name' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(169,56): error TS2345: Argument of type '{ id: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/products/[id]/page.tsx(203,30): error TS2339: Property 'category' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(215,30): error TS2339: Property 'unit' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(225,28): error TS2339: Property 'description' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(250,35): error TS2339: Property 'price' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(261,28): error TS2339: Property 'stock' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(264,73): error TS2339: Property 'stock' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(266,34): error TS2339: Property 'stock' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(269,34): error TS2339: Property 'unit' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(295,28): error TS2339: Property 'id' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(304,37): error TS2339: Property 'createdAt' does not exist on type '{}'.
+src/app/dashboard/products/[id]/page.tsx(312,37): error TS2339: Property 'updatedAt' does not exist on type '{}'.
+src/app/dashboard/products/new/page.tsx(39,9): error TS2339: Property 'products' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/products/new/page.tsx(44,17): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/app/dashboard/products/new/page.tsx(52,27): error TS2345: Argument of type '{ name: string; description: string; category: "gas-lp" | "gas-estacionario" | "servicios" | "accesorios" | "otro"; price: number; stock: number | undefined; unit: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/products/page.tsx(18,9): error TS2339: Property 'products' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/products/page.tsx(25,34): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/products/page.tsx(59,53): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/products/page.tsx(75,40): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/app/dashboard/products/page.tsx(91,35): error TS7006: Parameter 'p' implicitly has an 'any' type.
+src/app/dashboard/products/page.tsx(169,32): error TS7006: Parameter 'product' implicitly has an 'any' type.
+src/app/dashboard/profile/profile-form.tsx(79,9): error TS2339: Property 'user' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/profile/profile-form.tsx(84,17): error TS7006: Parameter 'error' implicitly has an 'any' type.
+src/app/dashboard/profile/profile-form.tsx(91,34): error TS2345: Argument of type '{ name: string; email: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/reports/customers/[id]/page.tsx(46,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/[id]/page.tsx(52,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/[id]/page.tsx(56,49): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/[id]/page.tsx(132,25): error TS2339: Property 'reportNumber' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(134,38): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(137,23): error TS2339: Property 'subject' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(144,45): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(156,56): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(159,45): error TS2345: Argument of type '{ id: string; status: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/reports/customers/[id]/page.tsx(180,42): error TS2339: Property 'priority' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(185,25): error TS2339: Property 'description' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(209,45): error TS2339: Property 'createdAt' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(214,23): error TS2339: Property 'resolvedAt' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(224,47): error TS2339: Property 'resolvedAt' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(251,29): error TS2339: Property 'customerId' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(261,27): error TS2339: Property 'category' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(280,43): error TS2339: Property 'createdAt' does not exist on type '{}'.
+src/app/dashboard/reports/customers/[id]/page.tsx(290,43): error TS2339: Property 'updatedAt' does not exist on type '{}'.
+src/app/dashboard/reports/customers/new/page.tsx(57,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/new/page.tsx(60,49): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/new/page.tsx(83,27): error TS2345: Argument of type '{ customerId: string; category: string; subject: string; description: string; priority: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/reports/customers/page.tsx(60,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/page.tsx(62,49): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/page.tsx(68,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/customers/page.tsx(80,28): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/reports/customers/page.tsx(80,51): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/reports/customers/page.tsx(227,24): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/reports/customers/page.tsx(227,37): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/reports/customers/page.tsx(237,20): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/reports/customers/page.tsx(266,9): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+src/app/dashboard/reports/customers/page.tsx(270,52): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(45,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(51,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(54,49): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(114,25): error TS2339: Property 'reportNumber' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(116,38): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(119,23): error TS2339: Property 'issueType' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(126,27): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(128,43): error TS2345: Argument of type '{ id: string; status: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(156,27): error TS2339: Property 'description' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(160,23): error TS2339: Property 'location' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(167,29): error TS2339: Property 'location' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(193,45): error TS2339: Property 'createdAt' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(200,23): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(207,46): error TS2339: Property 'status' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(210,47): error TS2339: Property 'updatedAt' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(236,27): error TS2339: Property 'driverId' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(247,29): error TS2339: Property 'unitId' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(267,27): error TS2339: Property 'issueType' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/[id]/page.tsx(275,43): error TS2339: Property 'updatedAt' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/new/page.tsx(50,9): error TS2339: Property 'fleetDrivers' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/drivers/new/page.tsx(61,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/drivers/new/page.tsx(64,49): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/drivers/new/page.tsx(82,27): error TS2345: Argument of type '{ driverId: string; unitId: string; issueType: string; location: string; description: string; }' is not assignable to parameter of type 'void'.
+src/app/dashboard/reports/drivers/new/page.tsx(141,41): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/new/page.tsx(141,51): error TS7006: Parameter 'driver' implicitly has an 'any' type.
+src/app/dashboard/reports/drivers/page.tsx(51,9): error TS2339: Property 'reports' does not exist on type 'TRPCOptionsProxy<BuiltRouter<{ ctx: { authApi: InferAPI<{ readonly ok: { <AsResponse extends boolean = false, ReturnHeaders extends boolean = false>(inputCtx_0?: ({ body?: undefined; } & { method?: "GET" | undefined; } & { query?: Record<string, any> | undefined; } & { params?: Record<...> | undefined; } & { ...; } ...'.
+src/app/dashboard/reports/drivers/page.tsx(63,28): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/page.tsx(63,51): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/page.tsx(209,24): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/page.tsx(209,37): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/page.tsx(219,20): error TS2339: Property 'data' does not exist on type '{}'.
+src/app/dashboard/reports/drivers/page.tsx(250,9): error TS2322: Type 'unknown' is not assignable to type 'ReactNode'.
+src/app/dashboard/reports/drivers/page.tsx(254,52): error TS2339: Property 'total' does not exist on type '{}'.
+src/app/dashboard/support/faq/page.tsx(475,7): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/trpc/server.tsx(23,5): error TS2353: Object literal may only specify known properties, and 'session' does not exist in type '{ headers: Headers; auth: Auth<{ database: (options: BetterAuthOptions) => DBAdapter<BetterAuthOptions>; baseURL: string; ... 5 more ...; onAPIError: { ...; }; }>; }'.
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

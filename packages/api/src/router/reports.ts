@@ -16,6 +16,7 @@ export const reportsRouter = createTRPCRouter({
     .input(
       z.object({
         limit: z.number().min(1).max(100).default(50),
+        offset: z.number().min(0).default(0),
         status: z.string().optional(),
         priority: z.string().optional(),
         search: z.string().optional(),
@@ -45,6 +46,7 @@ export const reportsRouter = createTRPCRouter({
         .from(customerReports)
         .where(and(...conditions))
         .limit(input.limit)
+        .offset(input.offset)
         .orderBy(desc(customerReports.createdAt));
 
       // Get count
@@ -144,6 +146,7 @@ export const reportsRouter = createTRPCRouter({
     .input(
       z.object({
         limit: z.number().min(1).max(100).default(50),
+        offset: z.number().min(0).default(0),
         status: z.string().optional(),
         search: z.string().optional(),
       }),
@@ -171,6 +174,7 @@ export const reportsRouter = createTRPCRouter({
         .from(driverReports)
         .where(and(...conditions))
         .limit(input.limit)
+        .offset(input.offset)
         .orderBy(desc(driverReports.createdAt));
 
       const [totalResult] = await db

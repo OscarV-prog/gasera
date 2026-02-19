@@ -7,6 +7,7 @@ import { driversRouter } from "./router/drivers";
 import { faqRouter } from "./router/faq";
 import { invitationsRouter } from "./router/invitations";
 import { legalRouter } from "./router/legal";
+import { messagesRouter } from "./router/messages";
 import { operationsRouter } from "./router/operations";
 import { ordersRouter } from "./router/orders";
 import { postRouter } from "./router/post";
@@ -39,6 +40,7 @@ export const appRouter = createTRPCRouter({
   fleetDrivers: driversRouter,
   reports: reportsRouter,
   user: userRouter,
+  messages: messagesRouter,
 });
 
 export type AppRouter = typeof appRouter;

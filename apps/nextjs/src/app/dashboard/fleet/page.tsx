@@ -148,7 +148,16 @@ export default function FleetPage() {
         {/* Map Placeholder */}
         {/* Map Placeholder */}
         <div className="relative h-[600px] overflow-hidden rounded-xl border border-gray-200 bg-gray-100 shadow-sm lg:col-span-3 lg:h-auto">
-          <FleetMap vehicles={vehicles} />
+          <FleetMap
+            vehicles={
+              vehicles?.map((v) => ({
+                ...v,
+                status: v.status as "active" | "maintenance" | "inactive",
+                latitude: v.latitude ? parseFloat(v.latitude) : 0,
+                longitude: v.longitude ? parseFloat(v.longitude) : 0,
+              })) || []
+            }
+          />
 
           <div className="absolute top-4 left-4 space-y-2">
             <div className="flex items-center gap-2 rounded-lg border border-white/50 bg-white/90 p-2 shadow-sm backdrop-blur-sm">
