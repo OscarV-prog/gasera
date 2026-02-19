@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 import { auth } from "@acme/auth/middleware";
 
-export default async function middleware(request: NextRequest) {
+export async function middleware(request: NextRequest) {
   const { url, nextUrl, cookies } = request;
 
   // Check for both common cookie names just in case
@@ -63,3 +63,4 @@ export const config = {
     "/((?!api|_next/static|_next/image|favicon.ico|public).*)",
   ],
 };
+export default middleware;
