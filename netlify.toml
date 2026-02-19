@@ -7,5 +7,5 @@
   NODE_VERSION = "22"
   PNPM_FLAGS = "--no-frozen-lockfile"
 
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# Netlify auto-detects Next.js and uses the modern v5 runtime.
+# Explicitly specifying the plugin (especially v4) is deprecated and causes Edge Function errors.
