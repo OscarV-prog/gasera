@@ -1,7 +1,7 @@
 import type { NextRequest } from "next/server";
 import { NextResponse } from "next/server";
 
-export async function middleware(request: NextRequest) {
+export async function proxy(request: NextRequest) {
   const { url, nextUrl, cookies } = request;
 
   // Check for both common cookie names just in case
@@ -61,4 +61,5 @@ export const config = {
     "/((?!api|_next/static|_next/image|favicon.ico|public).*)",
   ],
 };
-export default middleware;
+
+export { proxy as default };

@@ -7,7 +7,5 @@
   NODE_VERSION = "22"
   PNPM_FLAGS = "--no-frozen-lockfile"
 
-# Netlify auto-detects Next.js but in monorepos it often needs an explicit hint.
-# Adding the plugin back forces Netlify to use the v5 Runtime.
-[[plugins]]
-  package = "@netlify/plugin-nextjs"
+# Netlify auto-detects Next.js. In monorepos, keeping this empty
+# allows it to use the modern v5 runtime automatically.
