@@ -1,0 +1,23 @@
+{
+  "mode": "local",
+  "models": {
+    "deepseek": {
+      "type": "openai-compatible",
+      "base_url": "https://api.deepseek.com/v1",
+      "api_key": "FREE",
+      "models": [
+        {
+          "id": "deepseek-chat",
+          "name": "DeepSeek Chat",
+          "context": 32768
+        },
+        {
+          "id": "deepseek-coder",
+          "name": "DeepSeek Coder",
+          "context": 32768
+        }
+      ]
+    }
+  },
+  "default_model": "deepseek-chat"
+}

@@ -1,0 +1,1 @@
+id, tenant_id, license_plate, vehicle_type, brand, model, year, vin, capacity_weight, capacity_volume, fuel_type, vehicle_status, assigned_driver_id, registration_expiry, insurance_expiry, notes, created_at, updated_at, last_latitude, last_longitude, last_location_updated_at

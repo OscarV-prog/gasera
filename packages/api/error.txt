@@ -1,0 +1,5 @@
+src/router/orders.ts(48,11): error TS2345: Argument of type 'SQL<unknown> | undefined' is not assignable to parameter of type 'SQL<unknown>'.
+  Type 'undefined' is not assignable to type 'SQL<unknown>'.
+src/router/sanity.test.ts(1,38): error TS2307: Cannot find module 'vitest' or its corresponding type declarations.
+src/test/setup.ts(1,20): error TS2307: Cannot find module 'vitest' or its corresponding type declarations.
+vitest.config.ts(1,30): error TS2307: Cannot find module 'vitest/config' or its corresponding type declarations.

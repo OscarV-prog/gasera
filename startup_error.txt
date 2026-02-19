@@ -1,0 +1,14 @@
+ WARN  Unsupported engine: wanted: {"node":"^22.21.0"} (current: {"node":"v24.13.0","pnpm":"10.19.0"})
+
+> create-t3-turbo@ dev:next C:\antigravity\gasera
+> turbo watch dev -F @acme/nextjs...
+
+turbo 2.5.8
+
+• Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tsconfig, @acme/ui, @acme/validators
+• Running dev in 10 packages
+• Remote caching disabled
+  x Failed to connect to daemon.
+  `-> unable to connect to daemon after 3 retries
+
+ ELIFECYCLE  Command failed with exit code 1.

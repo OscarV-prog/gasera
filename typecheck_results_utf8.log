@@ -1,0 +1,176 @@
+﻿ÔÇëWARNÔÇë Unsupported engine: wanted: {"node":"^22.21.0"} (current: {"node":"v24.13.0","pnpm":"10.19.0"})
+
+> create-t3-turbo@ typecheck C:\antigravity\gasera
+> turbo run typecheck
+
+node.exe : turbo 
+2.5.8
+En C:\Users\patys\App
+Data\Roaming\npm\pnpm
+.ps1: 24 Carácter: 5
++     & "node$exe"  "
+$basedir/node_modules
+/pnpm/bin/pnpm.cjs" 
+$args
++     ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (turbo 2   
+ .5.8:String) [],    
+ RemoteException
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+ÔÇó Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/expo, @acme/github, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tanstack-start, @acme/tsconfig, @acme/ui, @acme/validators
+ÔÇó Running typecheck in 13 packages
+ÔÇó Remote caching disabled
+@acme/prettier-config:typecheck: cache hit, replaying logs e1563ea62b9929ed
+@acme/prettier-config:typecheck: 
+@acme/prettier-config:typecheck: > @acme/prettier-config@ typecheck C:\antigravity\gasera\tooling\prettier
+@acme/prettier-config:typecheck: > tsc --noEmit
+@acme/prettier-config:typecheck: 
+@acme/eslint-config:typecheck: cache hit, replaying logs f2aed496261e69b6
+@acme/eslint-config:typecheck: 
+@acme/eslint-config:typecheck: > @acme/eslint-config@ typecheck C:\antigravity\gasera\tooling\eslint
+@acme/eslint-config:typecheck: > tsc --noEmit
+@acme/eslint-config:typecheck: 
+@acme/db:typecheck: cache hit, replaying logs 87f13749c70dfedb
+@acme/db:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ typecheck C:\antigravity\gasera\packages\db
+@acme/db:typecheck: > tsc --noEmit[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/validators:build: cache hit, replaying logs 08347fc53b39e5cf
+@acme/validators:build: 
+@acme/validators:build: > @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc
+@acme/validators:build: 
+@acme/validators:typecheck: cache hit, replaying logs a0a11ff75e8016a8
+@acme/validators:typecheck: 
+@acme/validators:typecheck: > @acme/validators@ typecheck C:\antigravity\gasera\packages\validators
+@acme/validators:typecheck: > tsc --noEmit --emitDeclarationOnly false
+@acme/validators:typecheck: 
+@acme/tailwind-config:typecheck: cache hit, replaying logs 435e56249b947d8f
+@acme/tailwind-config:typecheck: 
+@acme/tailwind-config:typecheck: > @acme/tailwind-config@ typecheck C:\antigravity\gasera\tooling\tailwind
+@acme/tailwind-config:typecheck: > tsc --noEmit
+@acme/tailwind-config:typecheck: 
+@acme/ui:typecheck: cache hit, replaying logs 0a530b280ea18004
+@acme/ui:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/ui@ typecheck C:\antigravity\gasera\packages\ui
+@acme/ui:typecheck: > tsc --noEmit[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/db:build: cache hit, replaying logs c9693b511d21922e
+@acme/db:build: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/api:typecheck: cache miss, executing 1a5cda97329ca257
+@acme/auth:typecheck: cache hit, replaying logs 6a05e2f8d806c08e
+@acme/api:build: cache miss, executing 98004e244481aaff
+@acme/auth:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/auth@ typecheck C:\antigravity\gasera\packages\auth
+@acme/auth:typecheck: > tsc --noEmit[8;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/api:typecheck: 
+@acme/api:typecheck: > @acme/api@ typecheck C:\antigravity\gasera\packages\api
+@acme/api:typecheck: > tsc --noEmit
+@acme/api:typecheck: 
+@acme/api:build: 
+@acme/api:build: > @acme/api@ build C:\antigravity\gasera\packages\api
+@acme/api:build: > tsc
+@acme/api:build: 
+@acme/api:typecheck: src/router/assets.ts(63,35): error TS2339: Property 'type' does not exist on type 'PgTableWithColumns<{ name: "assets"; schema: undefined; columns: { id: PgColumn<{ name: "id"; tableName: "assets"; dataType: "string"; columnType: "PgText"; data: string; driverParam: string; notNull: true; hasDefault: false; ... 6 more ...; generated: undefined; }, {}, {}>; ... 17 more ...; updatedAt: PgColumn<...>...'.
+@acme/api:typecheck: src/router/assets.ts(169,10): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 2, '(value: { id: string | SQL<unknown> | Placeholder<string, any>; serialNumber: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<...>; ... 15 more ...; weightEmpty?: number | ... 3 more ... | undefined; }): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'type' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; serialNumber: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<...>; ... 15 more ...; weightEmpty?: number | ... 3 more ... | undefined; }'.
+@acme/api:typecheck:   Overload 2 of 2, '(values: { id: string | SQL<unknown> | Placeholder<string, any>; serialNumber: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<...>; ... 15 more ...; weightEmpty?: number | ... 3 more ... | undefined; }[]): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'id' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; serialNumber: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<...>; ... 15 more ...; weightEmpty?: number | ... 3 more ... | undefined; }[]'.
+@acme/api:typecheck: src/router/assets.ts(181,41): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 2, '(value: { id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Argument of type '{ id: string; assetId: string; action: "created"; newValue: string; }' is not assignable to parameter of type '{ id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }'.
+@acme/api:typecheck:       Property 'performedBy' is missing in type '{ id: string; assetId: string; action: "created"; newValue: string; }' but required in type '{ id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }'.
+@acme/api:typecheck:   Overload 2 of 2, '(values: { id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }[]): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'id' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }[]'.
+@acme/api:typecheck: src/router/assets.ts(229,41): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 2, '(value: { id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Argument of type '{ id: string; assetId: string; action: "status_changed"; previousValue: "in_stock" | "in_route" | "delivered" | "maintenance" | "retired"; newValue: "in_stock" | "in_route" | "delivered" | "maintenance" | "retired"; notes: string | undefined; }' is not assignable to parameter of type '{ id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }'.
+@acme/api:typecheck:       Property 'performedBy' is missing in type '{ id: string; assetId: string; action: "status_changed"; previousValue: "in_stock" | "in_route" | "delivered" | "maintenance" | "retired"; newValue: "in_stock" | "in_route" | "delivered" | "maintenance" | "retired"; notes: string | undefined; }' but required in type '{ id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }'.
+@acme/api:typecheck:   Overload 2 of 2, '(values: { id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }[]): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'id' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; assetId: string | SQL<unknown> | Placeholder<string, any>; action: "returned" | "maintenance" | ... 7 more ... | Placeholder<...>; ... 4 more ...; newValue?: string | ... 3 more ... | undefined; }[]'.
+@acme/api:typecheck: src/router/customers.ts(706,34): error TS2339: Property 'isDefault' does not exist on type 'PgTableWithColumns<{ name: "customer_addresses"; schema: undefined; columns: { id: PgColumn<{ name: "id"; tableName: "customer_addresses"; dataType: "string"; columnType: "PgText"; data: string; driverParam: string; notNull: true; ... 7 more ...; generated: undefined; }, {}, {}>; ... 21 more ...; updatedAt: PgColumn...'.
+@acme/api:typecheck: src/router/orders.ts(71,42): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 3, '(left: PgColumn<{ name: "order_status"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "delivered" | "assigned" | "pending" | "in_progress" | "cancelled" | "failed"; ... 9 more ...; generated: undefined; }, {}, {}>, right: "delivered" | ... 5 more ... | "failed"): SQL<...>', gave the following error.
+@acme/api:typecheck:     Argument of type 'string' is not assignable to parameter of type '"delivered" | SQLWrapper | "assigned" | "pending" | "in_progress" | "cancelled" | "failed"'.
+@acme/api:typecheck:   Overload 2 of 3, '(left: Aliased<string>, right: string | SQLWrapper): SQL<unknown>', gave the following error.
+@acme/api:typecheck:     Argument of type 'PgColumn<{ name: "order_status"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "delivered" | "assigned" | "pending" | "in_progress" | "cancelled" | "failed"; driverParam: string; ... 8 more ...; generated: undefined; }, {}, {}>' is not assignable to parameter of type 'Aliased<string>'.
+@acme/api:typecheck:       Type 'PgColumn<{ name: "order_status"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "delivered" | "assigned" | "pending" | "in_progress" | "cancelled" | "failed"; driverParam: string; ... 8 more ...; generated: undefined; }, {}, {}>' is missing the following properties from type 'Aliased<string>': sql, fieldAlias
+@acme/api:typecheck:   Overload 3 of 3, '(left: never, right: unknown): SQL<unknown>', gave the following error.
+@acme/api:typecheck:     Argument of type 'PgColumn<{ name: "order_status"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "delivered" | "assigned" | "pending" | "in_progress" | "cancelled" | "failed"; driverParam: string; ... 8 more ...; generated: undefined; }, {}, {}>' is not assignable to parameter of type 'never'.
+@acme/api:typecheck: src/router/orders.ts(74,44): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 3, '(left: PgColumn<{ name: "order_priority"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "low" | "normal" | "high" | "urgent"; driverParam: string; notNull: true; hasDefault: true; ... 6 more ...; generated: undefined; }, {}, {}>, right: SQLWrapper | ... 3 more ... | "urgent"): SQL<...>', gave the following error.
+@acme/api:typecheck:     Argument of type 'number' is not assignable to parameter of type 'SQLWrapper | "low" | "normal" | "high" | "urgent"'.
+@acme/api:typecheck:   Overload 2 of 3, '(left: Aliased<number>, right: number | SQLWrapper): SQL<unknown>', gave the following error.
+@acme/api:typecheck:     Argument of type 'PgColumn<{ name: "order_priority"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "low" | "normal" | "high" | "urgent"; driverParam: string; notNull: true; hasDefault: true; ... 6 more ...; generated: undefined; }, {}, {}>' is not assignable to parameter of type 'Aliased<number>'.
+@acme/api:typecheck:       Type 'PgColumn<{ name: "order_priority"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "low" | "normal" | "high" | "urgent"; driverParam: string; notNull: true; hasDefault: true; ... 6 more ...; generated: undefined; }, {}, {}>' is missing the following properties from type 'Aliased<number>': sql, fieldAlias
+@acme/api:typecheck:   Overload 3 of 3, '(left: never, right: unknown): SQL<unknown>', gave the following error.
+@acme/api:typecheck:     Argument of type 'PgColumn<{ name: "order_priority"; tableName: "orders"; dataType: "string"; columnType: "PgEnumColumn"; data: "low" | "normal" | "high" | "urgent"; driverParam: string; notNull: true; hasDefault: true; ... 6 more ...; generated: undefined; }, {}, {}>' is not assignable to parameter of type 'never'.
+@acme/api:typecheck: src/router/orders.ts(132,47): error TS2339: Property 'addressId' does not exist on type '{ id: string; tenantId: string; orderNumber: string; customerId: string; customerAddressId: string; status: "delivered" | "assigned" | "pending" | "in_progress" | "cancelled" | "failed"; ... 25 more ...; updatedAt: Date; }'.
+@acme/api:typecheck: src/router/orders.ts(169,12): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 2, '(value: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; customerId: string | SQL<unknown> | Placeholder<...>; ... 28 more ...; internalNotes?: string | ... 3 more ... | undefined; }): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Type 'number' is not assignable to type 'SQL<unknown> | Placeholder<string, any> | "low" | "normal" | "high" | "urgent" | undefined'.
+@acme/api:typecheck:   Overload 2 of 2, '(values: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; customerId: string | SQL<unknown> | Placeholder<...>; ... 28 more ...; internalNotes?: string | ... 3 more ... | undefined; }[]): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'id' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; customerId: string | SQL<unknown> | Placeholder<...>; ... 28 more ...; internalNotes?: string | ... 3 more ... | undefined; }[]'.
+@acme/api:typecheck: src/router/orders.ts(185,13): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 2, '(value: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; quantity: number | SQL<unknown> | Placeholder<...>; ... 8 more ...; assetId?: string | ... 3 more ... | undefined; }): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Argument of type '{ id: string; tenantId: any; orderId: string; itemType: string; itemModel: string; quantity: number; unitPrice: number; totalPrice: number; }[]' is not assignable to parameter of type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; quantity: number | SQL<unknown> | Placeholder<...>; ... 8 more ...; assetId?: string | ... 3 more ... | undefined; }'.
+@acme/api:typecheck:       Type '{ id: string; tenantId: any; orderId: string; itemType: string; itemModel: string; quantity: number; unitPrice: number; totalPrice: number; }[]' is missing the following properties from type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; quantity: number | SQL<unknown> | Placeholder<...>; ... 8 more ...; assetId?: string | ... 3 more ... | undefined; }': id, tenantId, quantity, unitPrice, and 5 more.
+@acme/api:typecheck:   Overload 2 of 2, '(values: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; quantity: number | SQL<unknown> | Placeholder<...>; ... 8 more ...; assetId?: string | ... 3 more ... | undefined; }[]): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Argument of type '{ id: string; tenantId: any; orderId: string; itemType: string; itemModel: string; quantity: number; unitPrice: number; totalPrice: number; }[]' is not assignable to parameter of type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; quantity: number | SQL<unknown> | Placeholder<...>; ... 8 more ...; assetId?: string | ... 3 more ... | undefined; }[]'.
+@acme/api:typecheck:       Type '{ id: string; tenantId: any; orderId: string; itemType: string; itemModel: string; quantity: number; unitPrice: number; totalPrice: number; }' is missing the following properties from type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; quantity: number | SQL<unknown> | Placeholder<...>; ... 8 more ...; assetId?: string | ... 3 more ... | undefined; }': productType, productSubtype, productName, lineTotal
+@acme/api:typecheck: src/router/orders.ts(238,16): error TS2322: Type 'string' is not assignable to type '"delivered" | SQL<unknown> | PgColumn<ColumnBaseConfig<ColumnDataType, string>, {}, {}> | "assigned" | "pending" | "in_progress" | "cancelled" | "failed" | undefined'.
+@acme/api:typecheck: src/router/orders.ts(243,41): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 2, '(value: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; newStatus: "delivered" | SQL<unknown> | ... 5 more ... | "failed"; ... 5 more ...; previousStatus?: "delivered" | ... 8 more ... | undefined; }): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'action' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; newStatus: "delivered" | SQL<unknown> | ... 5 more ... | "failed"; ... 5 more ...; previousStatus?: "delivered" | ... 8 more ... | undefined; }'.
+@acme/api:typecheck:   Overload 2 of 2, '(values: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; newStatus: "delivered" | SQL<unknown> | ... 5 more ... | "failed"; ... 5 more ...; previousStatus?: "delivered" | ... 8 more ... | undefined; }[]): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'id' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; newStatus: "delivered" | SQL<unknown> | ... 5 more ... | "failed"; ... 5 more ...; previousStatus?: "delivered" | ... 8 more ... | undefined; }[]'.
+@acme/api:typecheck: src/router/sanity.test.ts(1,38): error TS2307: Cannot find module 'vitest' or its corresponding type declarations.
+@acme/api:typecheck: src/router/tracking.ts(11,3): error TS2305: Module '"@acme/db/schema"' has no exported member 'fleetVehicles'.
+@acme/api:typecheck: src/router/tracking.ts(71,36): error TS2339: Property 'timestamp' does not exist on type 'PgTableWithColumns<{ name: "vehicle_tracking"; schema: undefined; columns: { id: PgColumn<{ name: "id"; tableName: "vehicle_tracking"; dataType: "string"; columnType: "PgText"; data: string; driverParam: string; notNull: true; ... 7 more ...; generated: undefined; }, {}, {}>; ... 15 more ...; serverReceivedAt: PgCol...'.
+@acme/api:typecheck: src/router/tracking.ts(77,37): error TS2339: Property 'timestamp' does not exist on type 'PgTableWithColumns<{ name: "vehicle_tracking"; schema: undefined; columns: { id: PgColumn<{ name: "id"; tableName: "vehicle_tracking"; dataType: "string"; columnType: "PgText"; data: string; driverParam: string; notNull: true; ... 7 more ...; generated: undefined; }, {}, {}>; ... 15 more ...; serverReceivedAt: PgCol...'.
+@acme/api:typecheck: src/router/tracking.ts(101,45): error TS2339: Property 'timestamp' does not exist on type 'PgTableWithColumns<{ name: "vehicle_tracking"; schema: undefined; columns: { id: PgColumn<{ name: "id"; tableName: "vehicle_tracking"; dataType: "string"; columnType: "PgText"; data: string; driverParam: string; notNull: true; ... 7 more ...; generated: undefined; }, {}, {}>; ... 15 more ...; serverReceivedAt: PgCol...'.
+@acme/api:typecheck: src/router/tracking.ts(108,39): error TS2339: Property 'timestamp' does not exist on type 'PgTableWithColumns<{ name: "vehicle_tracking"; schema: undefined; columns: { id: PgColumn<{ name: "id"; tableName: "vehicle_tracking"; dataType: "string"; columnType: "PgText"; data: string; driverParam: string; notNull: true; ... 7 more ...; generated: undefined; }, {}, {}>; ... 15 more ...; serverReceivedAt: PgCol...'.
+@acme/api:typecheck: src/router/tracking.ts(131,10): error TS2769: No overload matches this call.
+@acme/api:typecheck:   Overload 1 of 2, '(value: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; latitude: string | SQL<unknown> | Placeholder<...>; ... 13 more ...; serverReceivedAt?: Date | ... 2 more ... | undefined; }): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Type 'string' is not assignable to type '"in_route" | SQL<unknown> | Placeholder<string, any> | "loading" | "idle" | "problem" | "offline" | undefined'.
+@acme/api:typecheck:   Overload 2 of 2, '(values: { id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; latitude: string | SQL<unknown> | Placeholder<...>; ... 13 more ...; serverReceivedAt?: Date | ... 2 more ... | undefined; }[]): PgInsertBase<...> | PgInsertBase<...>', gave the following error.
+@acme/api:typecheck:     Object literal may only specify known properties, and 'id' does not exist in type '{ id: string | SQL<unknown> | Placeholder<string, any>; tenantId: string | SQL<unknown> | Placeholder<string, any>; latitude: string | SQL<unknown> | Placeholder<...>; ... 13 more ...; serverReceivedAt?: Date | ... 2 more ... | undefined; }[]'.
+@acme/api:typecheck: src/router/tracking.ts(167,39): error TS2339: Property 'timestamp' does not exist on type 'PgTableWithColumns<{ name: "vehicle_tracking"; schema: undefined; columns: { id: PgColumn<{ name: "id"; tableName: "vehicle_tracking"; dataType: "string"; columnType: "PgText"; data: string; driverParam: string; notNull: true; ... 7 more ...; generated: undefined; }, {}, {}>; ... 15 more ...; serverReceivedAt: PgCol...'.
+@acme/api:typecheck: src/router/tracking.ts(203,17): error TS2304: Cannot find name 'trackingTokens'.
+@acme/api:typecheck: src/router/tracking.ts(212,20): error TS2304: Cannot find name 'trackingTokens'.
+@acme/api:typecheck: src/router/tracking.ts(212,43): error TS2304: Cannot find name 'trackingTokens'.
+@acme/api:typecheck: src/test/setup.ts(1,20): error TS2307: Cannot find module 'vitest' or its corresponding type declarations.
+@acme/api:typecheck: ÔÇëELIFECYCLEÔÇë Command failed with exit code 2.
+@acme/api:typecheck: 
+ERROR: command 
+finished with error: 
+command (C:\antigravi
+ty\gasera\packages\ap
+i) C:\Users\patys\App
+Data\Local\pnpm\.tool
+s\pnpm\10.19.0\bin\pn
+pm.CMD run typecheck 
+exited (2)
+@acme/api#typecheck: 
+command (C:\antigravi
+ty\gasera\packages\ap
+i) C:\Users\patys\App
+Data\Local\pnpm\.tool
+s\pnpm\10.19.0\bin\pn
+pm.CMD run typecheck 
+exited (2)
+
+ Tasks:    9 successful, 11 total
+Cached:    9 cached, 11 total
+  Time:    12.123s 
+Failed:    @acme/api#typecheck
+
+ ERROR  run failed: 
+command  exited (2)
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 2.

@@ -10,3 +10,4 @@ export const authRouter = {
     return "you can see this secret message!";
   }),
 } satisfies TRPCRouterRecord;
+

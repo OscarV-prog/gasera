@@ -1,0 +1,68 @@
+﻿.                                        | ÔÇëWARNÔÇë Unsupported engine: wanted: {"node":"^22.21.0"} (current: {"node":"v24.13.0","pnpm":"10.19.0"})
+src/app/(dashboard)/assets/page.tsx(66,16): error TS2339: Property 'delete' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: any; session: { session: { id: string; createdAt: Date; updatedAt: Date; userId: string; expiresAt: Date; token: string; ipAddress?: string | null | undefined; userAgent?: string | ... 1 more ... | undefined; }; user: { ...; }; } | null; db: any; }; meta: object; errorShape: {...'.
+src/app/(dashboard)/assets/page.tsx(81,29): error TS2345: Argument of type '{ id: string; }' is not assignable to parameter of type 'void'.
+src/app/(dashboard)/customers/new/page.tsx(28,45): error TS18048: 'data' is possibly 'undefined'.
+src/app/(dashboard)/fleet/page.tsx(26,5): error TS18048: 'api.tracking.getFleetPositions' is possibly 'undefined'.
+src/app/(dashboard)/fleet/page.tsx(26,36): error TS2339: Property 'queryOptions' does not exist on type '(DecoratedRouterRecord<{ ctx: { authApi: any; session: { session: { id: string; createdAt: Date; updatedAt: Date; userId: string; expiresAt: Date; token: string; ipAddress?: string | null | undefined; userAgent?: string | ... 1 more ... | undefined; }; user: { ...; }; } | null; db: any; }; meta: object; errorShape: ...'.
+  Property 'queryOptions' does not exist on type 'DecorateMutationProcedure<{ input: any; output: any; transformer: true; errorShape: { data: { zodError: { formErrors: string[]; fieldErrors: { [x: string]: string[] | undefined; }; } | null; code: "BAD_REQUEST" | "UNAUTHORIZED" | ... 18 more ... | "CLIENT_CLOSED_REQUEST"; httpStatus: number; path?: string | undefine...'.
+src/app/(dashboard)/fleet/page.tsx(27,7): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(options: DefinedInitialDataOptions<unknown, Error, unknown, readonly unknown[]>, queryClient?: QueryClient | undefined): DefinedUseQueryResult<unknown, Error>', gave the following error.
+    Object literal may only specify known properties, and 'refetchInterval' does not exist in type 'QueryClient'.
+  Overload 2 of 3, '(options: UndefinedInitialDataOptions<unknown, Error, unknown, readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<unknown, Error>', gave the following error.
+    Object literal may only specify known properties, and 'refetchInterval' does not exist in type 'QueryClient'.
+  Overload 3 of 3, '(options: UseQueryOptions<unknown, Error, unknown, readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<unknown, Error>', gave the following error.
+    Object literal may only specify known properties, and 'refetchInterval' does not exist in type 'QueryClient'.
+src/app/(dashboard)/fleet/page.tsx(96,34): error TS2339: Property 'length' does not exist on type '{}'.
+src/app/(dashboard)/fleet/page.tsx(102,29): error TS2339: Property 'filter' does not exist on type '{}'.
+src/app/(dashboard)/fleet/page.tsx(102,37): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/app/(dashboard)/fleet/page.tsx(114,25): error TS2339: Property 'map' does not exist on type '{}'.
+src/app/(dashboard)/fleet/page.tsx(114,30): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/app/(dashboard)/fleet/page.tsx(166,24): error TS2339: Property 'map' does not exist on type '{}'.
+src/app/(dashboard)/fleet/page.tsx(166,29): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/app/(dashboard)/fleet/page.tsx(166,32): error TS7006: Parameter 'idx' implicitly has an 'any' type.
+src/app/(dashboard)/fleet/page.tsx(203,36): error TS2304: Cannot find name 'Plus'.
+src/app/(dashboard)/fleet/page.tsx(213,36): error TS2339: Property 'length' does not exist on type '{}'.
+src/app/(dashboard)/fleet/page.tsx(218,31): error TS2339: Property 'filter' does not exist on type '{}'.
+src/app/(dashboard)/fleet/page.tsx(218,39): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/app/(dashboard)/fleet/page.tsx(225,31): error TS2339: Property 'filter' does not exist on type '{}'.
+src/app/(dashboard)/fleet/page.tsx(225,39): error TS7006: Parameter 'v' implicitly has an 'any' type.
+src/app/(dashboard)/layout.tsx(5,22): error TS2307: Cannot find module '@acme/auth/server' or its corresponding type declarations.
+src/app/(dashboard)/legal/documents/page.tsx(51,22): error TS2339: Property 'data' does not exist on type '{ id: string; tenantId: string; documentType: "privacy_policy" | "terms_of_service" | "cookie_policy" | "disclaimer"; title: string; description: string | null; currentVersion: string; isActive: number; createdAt: Date; updatedAt: Date; }[]'.
+src/app/(dashboard)/legal/versions/page.tsx(80,22): error TS2339: Property 'data' does not exist on type '{ id: string; tenantId: string; platform: "driver_app" | "client_app"; versionCode: string; versionNumber: number; downloadUrl: string | null; storeUrl: string | null; minOsVersion: string | null; ... 5 more ...; createdAt: Date; }[]'.
+src/app/(dashboard)/operations/billing/page.tsx(18,3): error TS2305: Module '"@acme/ui"' has no exported member 'Badge'.
+src/app/(dashboard)/operations/reconciliation/page.tsx(80,44): error TS18047: 'l.totalMissing' is possibly 'null'.
+src/app/(dashboard)/operations/reconciliation/page.tsx(153,22): error TS18047: 'load.totalMissing' is possibly 'null'.
+src/app/(dashboard)/operations/reconciliation/page.tsx(153,42): error TS18047: 'load.totalDamaged' is possibly 'null'.
+src/app/(dashboard)/operations/reconciliation/page.tsx(156,26): error TS18047: 'load.totalMissing' is possibly 'null'.
+src/app/(dashboard)/operations/reconciliation/page.tsx(156,46): error TS18047: 'load.totalDamaged' is possibly 'null'.
+src/app/(dashboard)/orders/[id]/page.tsx(323,22): error TS18048: 'order.customer' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(323,53): error TS18048: 'order.customer' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(326,51): error TS18048: 'order.customer' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(341,22): error TS18048: 'order.address' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(341,46): error TS18048: 'order.address' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(342,22): error TS18048: 'order.address' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(344,22): error TS18048: 'order.address' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(344,44): error TS18048: 'order.address' is possibly 'undefined'.
+src/app/(dashboard)/orders/[id]/page.tsx(345,22): error TS18048: 'order.address' is possibly 'undefined'.
+src/app/(dashboard)/orders/new/page.tsx(52,19): error TS2339: Property 'listAddresses' does not exist on type 'DecoratedRouterRecord<{ ctx: { authApi: any; session: { session: { id: string; createdAt: Date; updatedAt: Date; userId: string; expiresAt: Date; token: string; ipAddress?: string | null | undefined; userAgent?: string | ... 1 more ... | undefined; }; user: { ...; }; } | null; db: any; }; meta: object; errorShape: {...'.
+src/app/(dashboard)/orders/new/page.tsx(53,7): error TS2769: No overload matches this call.
+  Overload 1 of 3, '(options: DefinedInitialDataOptions<unknown, Error, unknown, readonly unknown[]>, queryClient?: QueryClient | undefined): DefinedUseQueryResult<unknown, Error>', gave the following error.
+    Object literal may only specify known properties, and 'enabled' does not exist in type 'QueryClient'.
+  Overload 2 of 3, '(options: UndefinedInitialDataOptions<unknown, Error, unknown, readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<unknown, Error>', gave the following error.
+    Object literal may only specify known properties, and 'enabled' does not exist in type 'QueryClient'.
+  Overload 3 of 3, '(options: UseQueryOptions<unknown, Error, unknown, readonly unknown[]>, queryClient?: QueryClient | undefined): UseQueryResult<unknown, Error>', gave the following error.
+    Object literal may only specify known properties, and 'enabled' does not exist in type 'QueryClient'.
+src/app/(dashboard)/orders/new/page.tsx(58,40): error TS2339: Property 'length' does not exist on type '{}'.
+src/app/(dashboard)/orders/new/page.tsx(59,20): error TS7053: Element implicitly has an 'any' type because expression of type '0' can't be used to index type '{}'.
+  Property '0' does not exist on type '{}'.
+src/app/(dashboard)/orders/new/page.tsx(69,42): error TS18048: 'data' is possibly 'undefined'.
+src/app/(dashboard)/orders/new/page.tsx(197,37): error TS2339: Property 'map' does not exist on type '{}'.
+src/app/(dashboard)/orders/new/page.tsx(197,42): error TS7006: Parameter 'a' implicitly has an 'any' type.
+src/app/(dashboard)/orders/page.tsx(160,16): error TS2304: Cannot find name 'ShoppingCart'.
+src/app/(dashboard)/support/faq/page.tsx(327,7): error TS2322: Type 'string | undefined' is not assignable to type 'string'.
+  Type 'undefined' is not assignable to type 'string'.
+src/app/_components/posts.tsx(54,43): error TS2345: Argument of type '{ content: string; title: string; }' is not assignable to parameter of type '{ tenantId: string; title: string; content: string; }'.
+  Property 'tenantId' is missing in type '{ content: string; title: string; }' but required in type '{ tenantId: string; title: string; content: string; }'.
+undefined
+C:\antigravity\gasera\apps\nextjs:
+ÔÇëERR_PNPM_RECURSIVE_EXEC_FIRST_FAILÔÇë Command failed with exit code 1: tsc --noEmit --pretty false

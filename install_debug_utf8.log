@@ -1,0 +1,36 @@
+﻿Scope: all 14 workspace projects
+Progress: resolved 0, reused 1, downloaded 0, added 0
+packages/db                              | ÔÇëWARNÔÇë deprecated @vercel/postgres@0.10.0
+Progress: resolved 77, reused 76, downloaded 0, added 0
+Progress: resolved 86, reused 84, downloaded 1, added 0
+Progress: resolved 367, reused 328, downloaded 1, added 0
+Progress: resolved 701, reused 644, downloaded 1, added 0
+Progress: resolved 1249, reused 1137, downloaded 8, added 0
+Progress: resolved 1530, reused 1348, downloaded 30, added 0
+Progress: resolved 1547, reused 1363, downloaded 34, added 0
+Progress: resolved 1573, reused 1378, downloaded 35, added 0
+Progress: resolved 1606, reused 1407, downloaded 35, added 0
+Progress: resolved 1627, reused 1419, downloaded 35, added 0
+Progress: resolved 1630, reused 1422, downloaded 35, added 0
+ÔÇëWARNÔÇë 9 deprecated subdependencies found: @esbuild-kit/core-utils@3.3.2, @esbuild-kit/esm-loader@2.6.5, glob@10.4.5, glob@7.2.3, inflight@1.0.6, lodash.get@4.4.2, rimraf@3.0.2, tar@7.5.1, whatwg-encoding@3.1.1
+Packages: +43 -8
++++++++++++++++++++++++++++++++++++++++++++--------
+Progress: resolved 1630, reused 1422, downloaded 35, added 4
+Progress: resolved 1630, reused 1422, downloaded 35, added 42
+Progress: resolved 1630, reused 1422, downloaded 35, added 43
+Progress: resolved 1630, reused 1422, downloaded 35, added 43, done
+. postinstall$ pnpm lint:ws
+. postinstall: > create-t3-turbo@ lint:ws C:\antigravity\gasera
+. postinstall: > pnpm dlx sherif@latest
+. postinstall: 1 issue found in .\apps\nextjs/package.json:
+. postinstall:  Ô¿» error devDependencies should be ordered alphabetically. unordered-dependencies
+. postinstall:   Ôöé {
+. postinstall:   Ôöé   "devDependencies": {
+. postinstall:   ~     ...   ÔåÉ keys aren't sorted.
+. postinstall:   Ôöé   }
+. postinstall:   Ôöé }
+. postinstall: 1 issue found (1 Ô¿», 0 ÔÜá´©Å, 0 Ô£ô) across 13 packages in 4.2727ms.
+. postinstall:  Note: use `-i` to ignore dependencies, `-r` to ignore rules, `-p` to ignore packages, and `-f` to autofix fixable issues.
+. postinstall: ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.
+. postinstall: Failed
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 1.

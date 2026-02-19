@@ -1,5 +1,12 @@
 {
   "extends": "@acme/tsconfig/compiled-package.json",
+  "compilerOptions": {
+    "skipLibCheck": true,
+    "declaration": false,
+    "composite": false,
+    "declarationMap": false,
+    "emitDeclarationOnly": false
+  },
   "include": ["src"],
-  "exclude": ["node_modules"]
+  "exclude": ["node_modules", "**/*.test.ts", "vitest.config.ts", "src/test"]
 }

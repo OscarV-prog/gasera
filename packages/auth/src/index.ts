@@ -23,6 +23,10 @@ export function initAuth<
     }),
     baseURL: options.baseUrl,
     secret: options.secret,
+    emailAndPassword: {
+      enabled: true,
+      requireEmailVerification: false,
+    },
     plugins: [
       oAuthProxy({
         productionURL: options.productionUrl,
@@ -30,11 +34,23 @@ export function initAuth<
       expo(),
       ...(options.extraPlugins ?? []),
     ],
-    socialProviders: {
-      discord: {
-        clientId: options.discordClientId,
-        clientSecret: options.discordClientSecret,
-        redirectURI: `${options.productionUrl}/api/auth/callback/discord`,
+    // socialProviders: {
+    //   discord: {
+    //     clientId: options.discordClientId,
+    //     clientSecret: options.discordClientSecret,
+    //     redirectURI: `${options.productionUrl}/api/auth/callback/discord`,
+    //   },
+    // },
+    user: {
+      additionalFields: {
+        tenantId: {
+          type: "string",
+          required: false,
+        },
+        role: {
+          type: "string",
+          required: true,
+        },
       },
     },
     trustedOrigins: ["expo://"],

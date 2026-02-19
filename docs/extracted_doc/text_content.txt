@@ -1,0 +1,1437 @@
+App Back Office
+
+Esta plataforma está diseñada para el personal administrativo y de supervisión, permitiéndoles gestionar la operación completa del servicio de gas, así como administrar la información y el flujo de trabajo de las aplicaciones de Chofer y Cliente. Además de observar los comentarios que los clientes dejan sobre el servicio de entrega.
+
+Objetivo
+
+Centralizar y optimizar la gestión operativa, brindando control total sobre pedidos, usuarios, zonas de servicio, vehículos, precios y reportes, asegurando que toda la operación funcione de manera ordenada, eficiente y en tiempo real.
+
+Inicio de Sesión (Aplicativo Back Office)
+
+El Backoffice es una plataforma de uso exclusivo para el personal autorizado, encargada de administrar y supervisar toda la operación del servicio. Solo el equipo interno con permisos específicos puede acceder para gestionar pedidos, usuarios y configuración del sistema.
+
+Elementos principales
+
+Campos: 
+
+Correo electrónico (generado y asignado desde el desarrollo del backoffice).
+
+Contraseña (generada desde el desarrollo del back office).
+
+Botón principal: Iniciar sesión
+
+Opción adicional: 
+
+¿Olvidaste tu contraseña? Permite recuperar el acceso a la sesión mediante el correo electrónico otorgado.
+
+Características importantes:
+
+No incluye opción de registro de cuenta, ya que solo se puede tener registro de un solo administrador y la cuenta se otorga al inicio del desarrollo.
+
+Inicio
+
+A continuación se muestran los elementos que conforman la pantalla de inicio de la aplicación.
+
+Esta pantalla sirve para observar un resúmen de las funciones más importantes de la aplicación. Es un dashboard de todo.
+
+Header (parte superior):
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="720" w:right="0" w:hanging="360"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Leyenda nombre de aplicación y rol que juega: “GassApp Admin”.
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="720" w:right="0" w:hanging="360"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:u w:val="none"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Barra de búsqueda: Forma rápida  eficiente de buscar algo específico dentro de la aplicación.
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="0" w:right="0" w:firstLine="0"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Opciones adicionales del sistema: 
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="720" w:right="0" w:hanging="360"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:u w:val="none"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Ilustración de sol: Sirve para cambiar entre modo claro y modo oscuro la aplicación.
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="720" w:right="0" w:hanging="360"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:u w:val="none"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Ilustración de campana: Sirve para mostrar las notificaciones nuevas del back office.
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:right="0"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Ícono de perfil: 
+
+Leyenda de rol del usuario: (Admin Account).
+
+Botón e ícono de Perfil: Lleva directamente a la configuración del perfil del administrador.
+
+Botón de configuración: Lleva al usuario a la configuración de la aplicación
+
+Botón de cerrar sesión: Permite cerrar la sesión y lleva directamente a la pantalla de login.
+
+Contenido (parte intermedia de la pantalla)
+
+Título de la pantalla: Panel de Administración.
+
+Descripción breve: “Resumen general del sistema
+
+Tarjeta Clientes Registrados:
+
+Título de la tarjeta: “Clientes Registrados”.
+
+Ícono: Personas.
+
+Número de clientes activos: [x], donde x es la cantidad de usuarios conectados en la aplicación en ese momento.
+
+Descripción: “Total de clientes activos”.
+
+Tarjeta Choferes:
+
+Título de la tarjeta: “Choferes”.
+
+Ícono: Persona con engranaje.
+
+Número de choferes activos: [x], donde x es la cantidad de choferes conectados en la aplicación en ese momento.
+
+Descripción: “Choferes disponibles”.
+
+Tarjeta Pedidos:
+
+Título de la tarjeta: “Pedidos”.
+
+Ícono: Carrito de la compra.
+
+Número de clientes activos: [x], donde x es el total de pedidos realizados por los usuarios en el momento.
+
+Descripción: “Total de pedidos realizados”.
+
+Tarjeta Productos:
+
+Título de la tarjeta: “Productos”.
+
+Ícono: Cubo.
+
+Número de clientes activos: [x], donde x es la cantidad de productos en el catálogo.
+
+Descripción: “Productos en catálogo”.
+
+Tarjeta Accesos Rápidos:
+
+Título de la tarjeta: “Accesos Rápidos”.
+
+Botón Gestionar Pedidos: Este botón redirecciona directamente a la pantalla de Pedidos.
+
+Título de botón: “Gestionar Pedidos”.
+
+Descripción: “Ver y crear nuevos pedidos”.
+
+Ícono: Carrito de la compra.
+
+Comportamiento esperado: El botón redirige a la pantalla de pedidos de forma rápida y fluida.
+
+Botón Gestionar Clientes: Este botón redirecciona directamente a la pantalla de Clientes.
+
+Título de botón: “Gestionar Clientes”.
+
+Descripción: “Administrar base de clientes”.
+
+Ícono: Personas.
+
+Comportamiento esperado: El botón redirige a la pantalla de clientes de forma rápida y fluida.
+
+Botón Gestionar Choferes:  Este botón redirecciona directamente a la pantalla de Choferes.
+
+Título de botón: “Gestionar Choferes”.
+
+Descripción: “Administrar choferes y asignaciones”.
+
+Ícono: Persona con engranaje.
+
+Comportamiento esperado: El botón redirige a la pantalla de choferes de forma rápida y fluida.
+
+Tarjeta Actividad Reciente.
+
+Título de la tarjeta:  Actividad Reciente.
+
+Ícono verde: Avisa cuando hay un nuevo pedido a petición por un cliente.
+
+Título: “Nuevo pedido creado”.
+
+Descripción: “Hace [x] [minuto/minutos/hora,horas]”, donde x es la cantidad de tiempo que pasó cuando se realizó el pedido.
+
+Ícono azúl: Avisa cuando hay un nuevo cliente registrado en la aplicación.
+
+Título: “Cliente registrado”.
+
+Descripción: “Hace [x] [minuto/minutos/hora,horas]”, donde x es la cantidad de tiempo que pasó cuando se registró el cliente.
+
+Ícono azúl: Avisa cuando un pedido ya fue entregado a su destino.
+
+Título: “Cliente registrado”.
+
+Descripción: “Hace [x] [minuto/minutos/hora,horas]”, donde x es la cantidad de tiempo que pasó cuando se entregó el pedido.
+
+Menú de navegación
+
+El menú de navegación se encuentra en el lateral izquierdo de la pantalla y permite al usuario acceder de manera rápida a cada pantalla que compone la aplicación.
+
+Inicio:
+
+Pantalla principal donde se presenta un dashboard con un resúmen de las funciones más vitales de la aplicación.
+
+Clientes:
+
+Pantalla donde se pueden visualizar los clientes activos de la aplicación de clientes, de igual manera se pueden agregar nuevos clientes en esta misma pantalla.
+
+Choferes:
+
+Pantalla donde se pueden visualizar y gestionar los choferes activos de la aplicación, de igual manera se pueden agregar nuevos choferes a la aplicación.
+
+Reportes de Clientes:
+
+Pantalla donde se puede visualizar un dashboard con el resúmen de los reportes que se presentan en la aplicación, de igual manera se puede ver a detalle el reporte que cada cliente ha colocado y además colocar si se pudo resolver ese reporte o sigue pendiente de resolver.
+
+Reportes de Choferes:
+
+Pantalla donde se puede visualizar un dashboard con el resúmen de reportes de incidencias de los choferes, de igual manera se puede ver a detalle el reporte que los choferes colocan en la aplicación.
+
+Soporte Técnico:
+
+Pantalla en la que se pueden visualizar el número y correo de soporte técnico de la aplicación, esa información la puede editar el usuario, de igual manera se puede observar un apartado de preguntas frecuentes, también se pueden editar por el usuario.
+
+App Info:
+
+Pantalla en la que se puede editar el contenido del aviso de privacidad y los términos y condiciones tanto de la aplicación de cliente como de choferes.
+
+Unidades:
+
+Pantalla en la que se pueden visualizar los vehículos disponibles, además del estado en el que se encuentran, de igual manera se pueden agregar más vehículos si el usuario lo requiere.
+
+Pedidos:
+
+</w:r><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Pantalla donde se pueden visualizar, actualizar y agregar nuevos pedidos a la aplicación.
+
+Entregas:
+
+Pantalla donde se puede visualizar un dashboard con un resúmen de las entregas realizadas, entregas pendientes y en curso, de igual manera muestra un mapa donde indica la ubicación en tiempo real de los choferes en ese momento.
+
+Productos:
+
+Pantalla que permite observar y agregar los productos disponibles en stock en ese momento.
+
+Mensajería:
+
+Pantalla que muestra los mensajes que se realizan tanto por parte de los clientes como de los choferes, de igual manera el usuario puede redactar un mensaje.
+
+Facturación:
+
+Pantalla en la cual se puede facturar la compra que los clientes realizan.
+
+Reportes:
+
+Pantalla que muestra un dashboard con el resúmen de ventas, pedidos, clientes activos, etc.
+
+Clientes
+
+A continuación se muestran los elementos que conforman la pantalla de Clientes de la aplicación.
+
+Esta pantalla permite al administrador, verificar los clientes activos dentro de la aplicación y poder modificar sus datos, de igual manera permite agregar nuevos clientes a la aplicación.
+
+Título de la pantalla: “Clientes”.
+
+Descripción breve: “Gestionar la información de los clientes”.
+
+Botón de Agregar Cliente: “Agregar Cliente”.
+
+Acción: Una vez que se presiona el botón sale en la pantalla un popup, el cual contiene un formulario que se tiene que llenar con datos del nuevo cliente que se desea agregar. Una vez que se presiona el botón “Crear Cliente”, la persona debería aparecer en la lista de la parte inferior de la pantalla; sin embargo si se presiona el botón “Cancelar”, el formulario se cierra y no aparecerá ese nuevo cliente en la lista. A continuación se muestra una imagen de ejemplo y se desglosa su contenido:
+
+Título del PopUp: “Agregar Nuevo Cliente”.
+
+Descripción del PopUP: “Ingrese la información del cliente y sus direcciones de entrega”.
+
+Inicio del formulario: Aquí se indica los datos de la persona que se registrará en el sistema.
+
+Título del formulario: “Información del Cliente”.
+
+Espacio para escribir nombre: “Nombre Completo”.
+
+Espacio para escribir correo: “Email”.
+
+Espacio para escribir teléfono: “Teléfono”.
+
+Título de apartado: “Direcciones de Entrega”.
+
+Botón de agregar dirección”: “Agregar Dirección”, este botón genera una tarjeta igual a la mostrada en la imágen para poder agregar más de una dirección al formulario.
+
+Espacio para escribir dirección: “Dirección (Calle).
+
+Espacio para escribir número exterior: “Número Exterior”.
+
+Espacio para escribir número interior: “Número Interior (Opcional)”, este campo es opcional llenarlo por lo tanto no pasará nada si se deja en blanco.
+
+Espacio para escribir calles colindantes: “Entre Calles”.
+
+Espacio para escribir referencias de la ubicación exacta: “Referencia”.
+
+Botón cancelar: “Cancelar”.
+
+Botón para guardar información: “Crear Cliente”.
+
+Inicio de proceso de agregar cliente
+
+Pantalla de Clientes
+
+El usuario está ubicado en la pantalla de clientes.
+
+El usuario da clic en el botón de “Agregar Cliente”.
+
+PopUp del formulario
+
+El usuario debe llenar la información del cliente a añadir en los campos solicitados.
+
+Todos los campos son obligatorios de llenar.
+
+Llenado de la información de la dirección del cliente
+
+El usuario llena todos los campos solicitados con la información facilitada por el nuevo cliente.
+
+Todos los campos son obligatorios de llenar a excepción del campo: “Número Interior”.
+
+Acción: Se presiona el botón “Agregar Dirección”
+
+Se debe llenar los datos solicitados con la información facilitada por el nuevo cliente.
+
+Todos los campos son obligatorios a excepción del campo: “Número Interior.
+
+Acción final
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda el usuario nuevo y regresa al usuario a la pantalla de Clientes.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Cliente.
+
+Opción 3: El usuario da clic en “Guardar Cliente”, la información capturada en los campos se guarda y aparece el nuevo cliente en la pantalla de Clientes.
+
+Tarjeta donde se muestran los clientes.
+
+Barra de búsqueda: Para encontrar a un cliente solo buscando por algún dato que tenga registrado.
+
+Tabla con los clientes: Tabla que muestra a todos los clientes que estén registrados en la aplicación, adicional se muestran algunos de sus datos.
+
+Botón detalles del cliente: Ícono ojo.
+
+Acción: El usuario da clic en el botón de detalles cliente.
+
+Se despliega un PopUp con la información almacenada del cliente.
+
+Acción:
+
+El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Cliente.
+
+El usuario da clic en el botón “Cerrar” en la parte inferior derecha del PopUp, como resultado lo regresa a la pantalla de Cliente.
+
+Botón crear pedido: ícono carrito de compra.
+
+Inicio de proceso de agregar pedido
+
+Acción: El usuario da clic en el botón de crear pedido.
+
+Se despliega un PopUp con la información básica del cliente, indicando a quien le crearemos el pedido.
+
+Se selecciona la dirección de entrega correcta del pedido.
+
+Se selecciona el producto o servicio que se dará al cliente.
+
+Se selecciona la cantidad requerida de ese producto o servicio.
+
+Se selecciona una fecha programada, al dar clic en el botón se desplegará  un calendario, solo se selecciona la fecha deseada.
+
+Ahora se programa la hora de entrega de ese producto o servicio.
+
+De ser necesario, se colocan las notas pertinentes para ser más exacto con las instrucciones de entrega.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda el pedido y regresa al usuario a la pantalla de Clientes.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Cliente.
+
+Opción 3: El usuario da clic en “Crear Pedido”, la información capturada en los campos se guarda y aparece un nuevo pedido en la aplicación.
+
+.
+
+Botón editar cliente: Ícono editar.
+
+Inicio de proceso de editar cliente
+
+Acción: Dar clic en el botón de editar cliente.
+
+Se mostrará el mismo PopUp de “Agregar Cliente”, la diferencia es que en esta opción ya tendrá todos los campos llenos, solo se cambian los datos que se requieren cambiar.
+
+Llenar o editar los campos que se necesiten.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda la edición y regresa al usuario a la pantalla de Clientes.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Cliente.
+
+Opción 3: El usuario da clic en “Guardar Cambios”, la información capturada en los campos se guarda y aparece un nuevo pedido en la aplicación.
+
+Botón eliminar cliente: Ícono bote de basura.
+
+Acción: Dar clic en el botón eliminar cliente.
+
+Aparecerá un PopUp, diciendo que si estamos seguros de eliminar el cliente del sistema.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Cancelar”, no se ejecuta la acción y regresa al usuario a la pantalla de Clientes.
+
+Opción 2: El usuario da clic en “Aceptar”, el cliente en cuestión desaparece de los registros y regresa al usuario a la pantalla de Clientes.
+
+Choferes
+
+A continuación se muestran los elementos que conforman la pantalla de Choferes De la aplicación.
+
+Esta pantalla permite al administrador, verificar los choferes activos dentro de la aplicación, monitorearlos e incluso poder modificar sus datos, de igual manera permite agregar nuevos choferes a la aplicación.
+
+Título de la pantalla: “Choferes”.
+
+Descripción breve: “Gestionar a los repartidores y sus vehículos”.
+
+Botón de Agregar Cliente: “Agregar Chofer”.
+
+Acción: Una vez que se presiona el botón sale en la pantalla un popup, el cual contiene un formulario que se tiene que llenar con datos del nuevo chofer que se desea agregar. Una vez que se presiona el botón “Crear Chofer”, la persona debería aparecer en la lista de la parte inferior de la pantalla; sin embargo si se presiona el botón “Cancelar”, el formulario se cierra y no aparecerá ese nuevo chofer en la lista. A continuación se muestra una imagen de ejemplo y se desglosa su contenido:
+
+Título del PopUp: “Agregar Nuevo Chofer”.
+
+Descripción del PopUP: “Gestionar a los repartidores y sus vehículos”.
+
+Inicio del formulario: Aquí se indica los datos de la persona que se registrará en el sistema.
+
+Título del formulario: “Agregar Nuevo Chofer”.
+
+Descripción Breve: “Ingrese la información del chofer”.
+
+Espacio para escribir nombre: “Nombre Completo”.
+
+Espacio para escribir teléfono de emergencia: “Teléfono de Emergencia”.
+
+Espacio para escribir correo: “Email”.
+
+Espacio para escribir número de licencia: “Número de Licencia”.
+
+Espacio para escribir vigencia de licencia: “Vigencia de Licencia”.
+
+Espacio para seleccionar tipo de unidad: “Tipo de Unidad que Conducirá
+
+Título de tarjeta: “Usuario y Contraseña”
+
+Espacio para escribir usuario: “Usuario”.
+
+Espacio para escribir Contraseña: “Contraseña”.
+
+Botón para generar contraseña automática
+
+Botón para enviar usuario y contraseña a chofer: “Enviar Usuario y Contraseña a Chofer”.
+
+Inicio de proceso de agregar chofer
+
+Pantalla de Choferes
+
+El usuario está ubicado en la pantalla de Choferes.
+
+El usuario da clic en el botón de “Agregar Chofer”.
+
+PopUp del formulario
+
+El usuario debe llenar la información del chofer al añadir en los campos solicitados.
+
+Todos los campos son obligatorios de llenar.
+
+Llenado del usuario y contraseña del chofer
+
+El usuario llena todos los campos solicitados con la información facilitada por el nuevo chofer.
+
+Todos los campos son obligatorios de llenar.
+
+Acción: Dar clic en el ícono de contraseña automática.
+
+Genera una contraseña segura automáticamente.
+
+Acción: dar clic en botón “Enviar Usuario y Contraseña al Chofer”.
+
+Envía automáticamente sus datos para iniciar sesión al correo electrónico que el chofer proporcionó.
+
+Acción final
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda el chofer nuevo y regresa al usuario a la pantalla de Choferes.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Choferes.
+
+Opción 3: El usuario da clic en “Crear Chofer”, la información capturada en los campos se guarda y aparece el nuevo cliente en la pantalla de Choferes.
+
+Tarjeta donde se muestran los choferes.
+
+Barra de búsqueda: Para encontrar a un chofer solo buscando por algún dato que tenga registrado.
+
+Tabla con los choferes: Tabla que muestra a todos los choferes que estén registrados en la aplicación, adicional se muestran algunos de sus datos.
+
+Botón detalles del chofer: Ícono ojo.
+
+Acción: El usuario da clic en el botón de detalles chofer.
+
+Se despliega un PopUp con la información almacenada del chofer.
+
+Acción:
+
+El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Chofer.
+
+El usuario da clic en el botón “Cerrar” en la parte inferior derecha del PopUp, como resultado lo regresa a la pantalla de Chofer.
+
+Botón editar cliente: Ícono editar.
+
+Inicio de proceso de editar chofer
+
+Acción: Dar clic en el botón de editar chofer.
+
+Se mostrará el mismo PopUp de “Agregar Chofer”, la diferencia es que en esta opción ya tendrá todos los campos llenos, solo se cambian los datos que se requieren cambiar.
+
+Llenar o editar los campos que se necesiten.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda la edición y regresa al usuario a la pantalla de Choferes.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Choferes.
+
+Opción 3: El usuario da clic en “Guardar Cambios”, la información capturada en los campos se guarda y aparecen los cambios realizados en la aplicación.
+
+Botón eliminar chofer: Ícono bote de basura.
+
+Acción: Dar clic en el botón eliminar chofer.
+
+Aparecerá un PopUp, diciendo que si estamos seguros de eliminar el chofer del sistema.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda la edición y regresa al usuario a la pantalla de Choferes.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Choferes.
+
+Opción 3: El usuario da clic en “Guardar Cambios”, la información capturada en los campos se guarda y aparecen los cambios realizados en la aplicación.
+
+.
+
+Reportes de Clientes
+
+A continuación se muestran los elementos que conforman la pantalla de Reportes de Clientes de la aplicación.
+
+Esta pantalla tiene el principal motivo de mostrarle al administrador aquellos problemas, quejas y sugerencias que los clientes han dejado de acuerdo a su experiencia usando el servicio.
+
+Título de la pantalla: “Reportes de Clientes”.
+
+Descripción breve: “Gestionar y dar seguimiento a los reportes de clientes”.
+
+Tarjeta Total Reportes:
+
+Título de la tarjeta: “Total Reportes”.
+
+Ícono: Comentario.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes activos al momento
+
+Tarjeta Pendientes:
+
+Título de la tarjeta: “Pendientes”.
+
+Ícono: Reloj.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes pendientes al momento
+
+Tarjeta En Proceso:
+
+Título de la tarjeta: “En Proceso”.
+
+Ícono: Círculo con X.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes en proceso al momento.
+
+Tarjeta Resueltos:
+
+Título de la tarjeta: “Resueltos”.
+
+Ícono: Círculo con check.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes resueltos al momento.
+
+Barra de búsqueda: Filtra los reportes por medio de su ID o alguna descripción que posean e ingresen en la búsqueda.
+
+Menús desplegables “Todos los Estados” y “Todas las Prioridades”:  Sirven para filtrar todos los reportes que hay en el sistema.
+
+Acción: Dar clic al menú desplegable “Todos los Estados”.
+
+Despliega varias opciones que sirven para filtrar los reportes.
+
+Acción: Dar clic al menú desplegable “Todas las Prioridades”.
+
+Despliega varias opciones que sirven para filtrar los reportes.
+
+Tabla de los reportes: Tabla en la que se muestran todos y cada uno de los reportes colocados por los clientes.
+
+Acciones: Dar clic a ver detalles del reporte.
+
+Muestra en un PopUP la información de la persona que dejó el reporte, adicional el ID del reporte y el estado de este mismo. Abajo del PopUp vienen unas opciones que permiten darle seguimiento al reporte.
+
+Inicio de proceso darle seguimiento a los reportes
+
+Acción: Dar clic en el botón de Detalle del Reporte.
+
+Se mostrará un PopUp con los datos del cliente y de su reporte, si bajamos un poco podemos observar el apartado de seguimiento.
+
+Primero debemos modificar el estado del reporte.
+
+Agregar una nota del seguimiento.
+
+Una vez escrita la nota, se habilitará el botón de Agregar Nota, esto añadirá la nota a la solución del reporte.
+
+Ahora se debe dar una solución a ese reporte, en su respectivo apartado el usuario podrá poner cómo se soluciona ese problema.”.
+
+Una vez escrita la resolución, se habilitará el botón de Marcar como Resuelto, esto provocará que cambie el estado del reporte a “Resuelto”.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Cerrar” y regresa al usuario a la pantalla de Reportes de Clientes.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Reportes de Clientes.
+
+Reportes de Choferes
+
+A continuación se muestran los elementos que conforman la pantalla de Reportes de Clientes de la aplicación.
+
+Esta pantalla tiene el principal motivo de mostrarle al administrador aquellos problemas o incidencias que los choferes han reportado de acuerdo a su experiencia en las entregas o si hubo algún problema durante la jornada.
+
+Título de la pantalla: “Reportes de Choferes”.
+
+Descripción breve: “Gestiona las incidencias reportadas de los choferes”.
+
+Tarjeta Total de Reportes:
+
+Título de la tarjeta: “Total de Reportes”.
+
+Ícono: Alerta.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes activos al momento.
+
+Descripción breve: “Todos los reportes”.
+
+Tarjeta Pendientes:
+
+Título de la tarjeta: “Pendientes”.
+
+Ícono: Reloj.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes pendientes al momento.
+
+Descripción breve: “Requieren atención”.
+
+Tarjeta En Proceso:
+
+Título de la tarjeta: “En Proceso”.
+
+Ícono: Alerta.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes en proceso al momento.
+
+Descripción breve: “Siendo atendidos”.
+
+Tarjeta Resueltos:
+
+Título de la tarjeta: “Resueltos”.
+
+Ícono: Círculo con check.
+
+Cantidad de reportes: [x] donde “x” es la cantidad de reportes resueltos al momento.
+
+Descripción Breve: “Completados”.
+
+Título de tarjeta: “Filtros”.
+
+Descripción breve: “Estado”.
+
+Menús desplegables “Estado”:  Sirven para filtrar todos los reportes que hay en el sistema.
+
+Acción: Dar clic al menú desplegable “Estado”.
+
+Despliega varias opciones que sirven para filtrar los reportes.
+
+Título de la tarjeta: “Lista de Reportes”.
+
+Descripción breve: “[x] reportes(s) encontrado(s)”. Donde “x” representa la cantidad de reportes de choferes en el sistema.
+
+Tabla de los reportes: Tabla en la que se muestran todos y cada uno de los reportes colocados por los choferes.
+
+Acciones: Dar clic a ver detalles del reporte.
+
+Muestra en un PopUP la información de la persona que dejó el reporte, adicional el ID del reporte y el estado de este mismo. Abajo del PopUp vienen unas opciones que permiten darle seguimiento al reporte.
+
+Inicio de proceso darle seguimiento a los reportes
+
+Acción: Dar clic en el botón de Detalle del Reporte.
+
+Se mostrará un PopUp con los datos del cliente, de su unidad y de su reporte, si bajamos un poco podemos observar el apartado de seguimiento.
+
+Primero debemos agregar una nota del seguimiento.
+
+Una vez escrita la nota, se presiona el botón “Agregar”, esto añadirá la nota a la solución del reporte.
+
+Ahora se debe dar una solución a ese reporte, en su respectivo apartado el usuario podrá poner cómo se soluciona ese problema.”.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Marcar como Resuelto” y regresa al usuario a la pantalla de Reportes de Choferes. El reporte ahora aparece como “Resuelto”.
+
+Opción 1: El usuario da clic en “Marcar en Proceso” y regresa al usuario a la pantalla de Reportes de Choferes. El reporte ahora aparece como “En Proceso”.
+
+Opción 1: El usuario da clic en “Cancelar Reporte” y regresa al usuario a la pantalla de Reportes de Choferes. El reporte sigue apareciendo en la lista pero sale con una dota que dice “Cancelado”.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Reportes de Choferes.
+
+Soporte Técnico
+
+A continuación se muestran los elementos que conforman la pantalla de Reportes de Clientes de la aplicación.
+
+Esta pantalla permite al usuario observar y editar principalmente tanto el número de soporte como el correo electrónico, esta información se verá reflejada tanto en la aplicación de cliente como de chofer.  De igual manera permite observar, editar y agregar preguntas frecuentes, las cuales se verán en las dos aplicaciones anteriormente mencionadas.
+
+Título de la pantalla: “Soporte Técnico”.
+
+Descripción breve: “Gestiona la información de contacto  preguntas frecuentes”.
+
+Título de la tarjeta: “Información de Contacto”.
+
+Descripción breve: “Datos de contacto mostrados en las aplicaciones”.
+
+Espacio para escribir correo: “Correo Electrónico de Soporte”, este espacio no se puede redactar nada.
+
+Espacio para escribir teléfono: “Teléfono de Soporte”, este campo no se puede redactar nada.
+
+Botón editar: “Editar Información”.
+
+Acción: Dar clic en “Editar Información”.
+
+Esto habilitará los espacios para escribir tanto el correo como el teléfono de soporte.
+
+Acción final:
+
+Opción 1: Se da clic en “Cancelar” los cambios realizados en los cambios se cancelan, se deshabilitan los espacios para escribir y solo queda habilitado el botón de  “Editar Información”.
+
+Opción 2: Se da clic en “Guardar Cambios”, los cambios realizados se reflejan en la aplicación, posterior los espacios para escribir se deshabilitan los espacios para escribir y solo queda habilitado el botón de  “Editar Información”.
+
+Título de la tarjeta: “Preguntas Frecuentes (FAQ)”.
+
+Descripción Breve: “Gestiona las preguntas frecuentes mostradas en las aplicaciones”.
+
+Botón agregar: “Agregar FAQ”.
+
+Acción: Dar clic en “Agregar FAQ”.
+
+Lanza un PopUP para poder agregar una nueva pregunta frecuente, los elementos del PopUp son los siguientes:
+
+Título del PopUp: “Agregar Pregunta Frecuente”.
+
+Descripción breve: “Ingresa los datos de la nueva pregunta frecuente”.
+
+Espacio para escribir categoría: “Categoría”.
+
+Espacio para escribir pregunta: “Pregunta”.
+
+Espacio para escribir respuesta: “Respuesta”.
+
+Botón cancelar: “Cancelar”.
+
+Botón respuesta: “Respuesta”.
+
+Inicio de proceso de agregar pregunta
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="720" w:right="0" w:hanging="360"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Llenar los campos que el formulario pide, que son los espacios para agregar categoría, la pregunta y su respuesta.
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="720" w:right="0" w:hanging="360"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Acción final:
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda la edición y regresa al usuario a la pantalla de Soporte Técnico.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Soporte Técnico.
+
+Opción 3: El usuario da clic en “Agregar FAQ”, la información capturada en los campos se guarda y aparecen los cambios realizados en la aplicación. Regresa al usuario a la pantalla de Soporte Técnico.
+
+Tabla de preguntas: En esta tabla se muestran todas las preguntas y sus respuestas que el usuario ha ingresado.
+
+Botón editar pregunta: Muestra el mismo PopUp de agregar FAQ, sin embargo este ya tiene todos los campos llenos con los datos de la pregunta a actualizar.
+
+Acción final:
+
+Opción 1: El usuario da clic en “Cancelar”, no se guarda la edición y regresa al usuario a la pantalla de Soporte Técnico.
+
+Opción 2: El usuario da clic en el ícono de “x” en la parte superior derecha del PopUp, como resultado lo regresa a la pantalla de Soporte Técnico.
+
+Opción 3: El usuario da clic en “Actualizar FAQ”, la información capturada en los campos se guarda y aparecen los cambios realizados en la aplicación. Regresa al usuario a la pantalla de Soporte Técnico.
+
+<w:left w:space="0" w:sz="0" w:val="nil"/><w:bottom w:space="0" w:sz="0" w:val="nil"/><w:right w:space="0" w:sz="0" w:val="nil"/><w:between w:space="0" w:sz="0" w:val="nil"/></w:pBdr><w:shd w:fill="auto" w:val="clear"/><w:spacing w:after="0" w:before="0" w:line="276" w:lineRule="auto"/><w:ind w:left="720" w:right="0" w:hanging="360"/><w:jc w:val="left"/><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:sz w:val="26"/><w:szCs w:val="26"/></w:rPr></w:pPr><w:r w:rsidDel="00000000" w:rsidR="00000000" w:rsidRPr="00000000"><w:rPr><w:rFonts w:ascii="Calibri" w:cs="Calibri" w:eastAsia="Calibri" w:hAnsi="Calibri"/><w:b w:val="1"/><w:bCs w:val="1"/><w:rtl w:val="0"/></w:rPr><w:t xml:space="preserve">Botón eliminar pregunta: Solo elimina la pregunta seleccionada.
+
+App Info
+
+A continuación se muestran los elementos que conforman la pantalla de Reportes de Clientes de la aplicación.
+
+En esta pantalla el usuario puede visualizar y modificar el aviso de privacidad y los términos y condiciones de las aplicaciones, al modificarlos desde el Back Office se deben ver reflejados los cambios en las otras aplicaciones.
+
+Título de la pantalla: “App info”.
+
+Descripción breve: “Gestiona los avisos de privacidad y términos  y condiciones de las aplicaciones”.
+
+Botones para cambiar a App Cliente: “App Cliente”, este botón estará activo predeterminadamente al entrar en esta pantalla, su objetivo es permitir al usuario modificar el aviso de privacidad y los términos y condiciones.
+
+Título de la tarjeta: “Aviso de Privacidad”.
+
+Descripción breve: “Contenido mostrado en la App de Cliente”.
+
+Espacio para redactar el aviso de privacidad: Un espacio en blanco para redactar.
+
+Botón guardar: “Guardar cambios”.
+
+Acción: Dar clic en “Guardar Cambios”.
+
+Primero debemos modificar lo que queramos en el apartado de la escritura del aviso de privacidad.
+
+Acción final: Dar clic en “Guardar Cambios”.
+
+Hace que los cambios se vean reflejados en la aplicación.
+
+Título de la tarjeta: “Términos y Condiciones”.
+
+Descripción breve: “Contenido mostrado en la App de Cliente”.
+
+Espacio para redactar los términos y condiciones: Un espacio en blanco para redactar.
+
+Botón guardar: “Guardar cambios”.
+
+Acción: Dar clic en “Guardar Cambios”.
+
+Primero debemos modificar lo que queramos en el apartado de la escritura de términos y condiciones.
+
+Acción final: Dar clic en “Guardar Cambios”.
+
+Hace que los cambios se vean reflejados en la aplicación.
+
+Botones para cambiar a App Chofer: “App Chofer”, su objetivo es permitir al usuario modificar el aviso de privacidad y los términos y condiciones.
+
+Título de la tarjeta: “Aviso de Privacidad”.
+
+Descripción breve: “Contenido mostrado en la App de Chofer”.
+
+Espacio para redactar el aviso de privacidad: Un espacio en blanco para redactar.
+
+Botón guardar: “Guardar cambios”.
+
+Acción: Dar clic en “Guardar Cambios”.
+
+Primero debemos modificar lo que queramos en el apartado de la escritura del aviso de privacidad.
+
+Acción final: Dar clic en “Guardar Cambios”.
+
+Hace que los cambios se vean reflejados en la aplicación.
+
+Título de la tarjeta: “Términos y Condiciones”.
+
+Descripción breve: “Contenido mostrado en la App de Chofer”.
+
+Espacio para redactar los términos y condiciones: Un espacio en blanco para redactar.
+
+Botón guardar: “Guardar cambios”.
+
+Acción: Dar clic en “Guardar Cambios”.
+
+Primero debemos modificar lo que queramos en el apartado de la escritura de términos y condiciones.
+
+Acción final: Dar clic en “Guardar Cambios”.
+
+Hace que los cambios se vean reflejados en la aplicación.
+
+Unidades
+
+A continuación se mostrará los elementos que conforman la pestaña de unidades:
+
+En esta pestaña se podrá gestionar el catálogo de vehículos disponible, se puede consultar el estado de la unidad, su chofer, capacidad, mantenimiento, etc. Vienen adjuntas opciones para consultar todos los datos de la unidad, modificarlos y borrarla. En la parte superior se encuentra una opción para registrar una nueva unidad.
+
+Pantalla principal
+
+Se muestra un botón y la lista de las unidades
+
+Agregar nueva unidad
+
+Lista de unidades
+
+Agregar una nueva unidad
+
+Se presiona y muestra un pop up con la info requerida
+
+Tipo de unidad: desplegable con 3 tipos de unidades
+
+Número económico: Input que solo deja poner un código de 3 números
+
+Número de Placa: el número de placa de la unidad 
+
+Modelo del Vehiculo: Modelo de la unidad
+
+Capacidad de Tanque (Litros): Cuántos Litros puede sostener el tanque
+
+Botón de crear unidad
+
+Se pica el botón crear unidad y la nueva unidad se registra en la lista
+
+Barra de búsqueda
+
+Input que filtra los elementos de la lista en base a sus atributos (Número Económico, Placas, Modelo, Tipo, etc.)
+
+Lista de Unidades
+
+Ver la información de una unidad
+
+Dar click en el icono del ojo
+
+Salta un pop-up con toda la info de la unidad
+
+Icono “X” que cierra el pop-up
+
+Botón “cerrar” que cierra el pop-up
+
+Editar la info de una unidad
+
+Dar click al icono de la libreta y el lápiz
+
+Salta un pop-up con la información editable de la unidad
+
+Tipo de Unidad: dropdown
+
+Número Económico: alfanumérico 3 dígitos
+
+ Número de Placas: alfanumérico
+
+Modelo del Vehículo: Input 
+
+Capacidad de Tanque: Input de capacidad máxima del tanque en Litros
+
+Estado: Dropdown del estado en el que se encuentra el vehículo
+
+Borrar una unidad
+
+Dar click en el icono de el bote de basura
+
+Surge un pop-up con texto “¿Está seguro de que desea eliminar esta unidad?”
+
+Pedidos
+
+A continuación se mostrará los elementos que conforman la pestaña de pedidos
+
+En la pestaña de pedidos se pueden gestionar y asignar los pedidos de entrega en el sistema, se pueden agregar pedidos con el botón de “Nuevo pedido” y se pueden filtrar usando los filtros inferiores a la barra de búsqueda. Dentro de la lista se encuentran todos los pedidos registrados junto con su información
+
+Header
+
+Título “Pedidos”
+
+Leyenda “Gestiona y asigna pedidos de entrega”
+
+Botón “Nuevo pedido”
+
+Contenido
+
+Búsqueda de pedidos
+
+Filtros de pedidos
+
+Lista de pedidos
+
+Crear un nuevo pedido
+
+Dar click en el botón “Nuevo Pedido”
+
+Saltará un pop-up en pantalla
+
+Se muestra un formulario y dos botones
+
+Botón “Cancelar” para cerrar el pop-up
+
+Botón “Crear pedido” para crear el pedido una vez hecho el formulario
+
+Buscar cliente: Seleccionar un cliente de las opciones de búsqueda
+
+Producto o servicio: Seleccionar una opción del dropdown
+
+Cantidad: Numérico que indica la cantidad
+
+Forma de pago: Dropdown de las formas de pago aceptadas
+
+Fecha programada: Field para introducir una fecha
+
+Hora programada: Field para introducir un hora específica
+
+Notas: Input opcional para notas
+
+Creación del pedido
+
+Dar click al botón “Crear Pedido”
+
+El pedido se registra en la lista de pedidos
+
+Filtro de búsqueda
+
+Input que te deja filtrar los pedidos por sus atributos (número de pedido, cliente o teléfono)
+
+Filtros por tipo
+
+Barra de botones de búsqueda que separa a los pedidos por tipo: Todos, Pendientes, Asignados, En Tránsito y Entregados
+
+Lista de pedidos
+
+Pedido: alfanumérico
+
+Cliente: nombre y numero de telefono
+
+Producto: producto y cantidad
+
+Chofer: nombre y apellido del chofer
+
+Programado: fecha y hora programada
+
+Total: dinero a pagar
+
+Estado: estado de la entrega del pedido
+
+Acciones: acciones de gestión del producto
+
+Ver info de un pedido
+
+Dar click al icono de ojo en el pedido
+
+Salta un pop-up con toda la info del pedido
+
+Icono “X” para cerrar el pop-up
+
+Botón “Cancelar Pedido” para cancelar el pedido
+
+Botón “Cerrar” para cerrar el pop-up
+
+Asignar un chofer a un pedido
+
+Dar click al icono de user+
+
+Seleccionar un chofer de la lista del dropdown
+
+Icono “X” para cerrar el pop-up
+
+Botón “cerrar” que cierra el pop-up
+
+Confirmar chofer asignado
+
+Dar click al botón “Asignar Chofer”
+
+Se asigna un chofer al pedido
+
+Reagendar un pedido
+
+Nueva Fecha: Input de tipo fecha 
+
+Nueva Hora: Input de tipo hora
+
+Motivo del Reagendamiento: Input de texto
+
+Botón “Cancelar” para cerrar el pop-up
+
+Icono “X” para cerrar el pop-up
+
+Confirmación de Reagendamiento
+
+Dar click a el botón “Reagendar Pedido”
+
+El pedido cambia el área de “Programado”
+
+Borrar un Pedido
+
+Dar click al icono de el bote de basura
+
+Saltará un Pop-up
+
+Botón “Cancelar” para no borrar el pedido
+
+Botón “Aceptar” para borrar el pedido
+
+Confirmación de Borrado
+
+Dar click en el botón “Aceptar”
+
+Ya no aparecerá el pedido borrado en la lista
+
+Reasignar Chofer
+
+Nuevo Chofer: Dropdown con opciones de los choferes disponibles
+
+Icono “X” para cerrar el Pop-up
+
+Botón “Cerrar” para cerrar el Pop-up
+
+Confirmar reasignación
+
+Dar click en el botón “Reasignar Chofer”
+
+El chofer será reasignado en el pedido
+
+Programación del Día
+
+A continuación se mostrará los elementos que conforman la pestaña de programación del día
+
+La pestaña de Programación del Día presenta un tablero Kanban con choferes y pedidos asignados, sirve para gestionar los pedidos asignados a los choferes y consultar la información al respecto, es increíblemente útil cuando se refiere a optimización organizacional.
+
+Header
+
+Título “Programación del Día”
+
+Leyenda “Tablero Kanban con choferes y pedidos asignados para viernes, 5 de diciembre de 2025”
+
+Contenedores con contadores del Total de Pedidos, Asignados, En Tránsito y Completados
+
+Contenido
+
+Tablero Kanban de los pedidos asignados organizados por choferes y modelos
+
+Ver los detalles del pedido
+
+Dar click a uno de los contenedores del pedido
+
+Se abrirá un pop-up con la info de los pedidos
+
+Icono “X” para cerrar el pop-up
+
+Reasignar un pedido
+
+Dar click al botón “Reasignar”
+
+Se abrirá un pop-up con la info del pedido y el chofer
+
+Nuevo Chofer: Dropdown con los choferes disponibles
+
+Botón “Cancelar” para cerrar el pop-up
+
+Icono “X” para cerrar el pop-up
+
+Confirmar Reasignación
+
+Dar click al botón “Confirmar reasignación”
+
+El pedido será reasignado al chofer escogido y se actualizará en el tablero
+
+Entregas
+
+A continuación se mostrará los elementos que conforman la pestaña de entregas
+
+En la pestaña de entregas se podrá monitorear el estado y ubicación de todas las entregas activas, se puede ver en tiempo real las entregas y su destino, un aproximado del tiempo de espera hasta llegar a su destino y la info general del pedido.
+
+Header
+
+Título “Entregas en Tiempo Real”
+
+Leyenda “Monitorea el estado y ubicación de todas las entregas activas”
+
+Botón “Mapa Completo” que extiende el mapa a tamaño de la pantalla
+
+Contenedores que indican el número de productos en cierto estado
+
+Contenido
+
+Mapa en tiempo real
+
+Filtros que separan las entregas por tipo
+
+Contenedores que muestran info de la entrega junto a un aproximado de cuánto recorrido lleva del camino total
+
+Mapa Completo
+
+Dar click al botón “Mapa Completo”
+
+El mapa se mostrará al tamaño del contenedor con las entregas debajo
+
+Reducir Mapa
+
+Dar click al botón “Vista Dividida”
+
+El mapa se mostrará a mitad del tamaño del contenedor con las entregas a un lado
+
+Seleccionar una entrega con el mapa
+
+Dar click en el circulo de color con el numero de paquete deseado
+
+Se abrirá un pop-up con la info del paquete
+
+Filtrar entregas por etiquetas
+
+Dar click en cualquier opción de los filtros
+
+Se filtrará a las entregas tachadas con esa etiqueta
+
+Consultar info de la entrega desde la barra lateral
+
+Dar click en el contenedor con el número de la orden
+
+Se abrirá un pop-up con la info de la entrega
+
+Productos y Servicios
+
+A continuación se mostrará los elementos que conforman la pestaña de Productos y Servicios
+
+Esta pestaña sirve para gestionar el catálogo de productos y servicios, teniendo para crear un nuevo producto o servicio y permite observar de manera clara observar a detalle todos los productos y servicios, y realizar cambios o filtrarlos.
+
+Header
+
+Título “Productos y Servicios”
+
+Leyenda “Gestiona tu catalogo de productos y servicios”
+
+Botón “Nuevo Productos/Servicio” que puede crear un nuevo producto o servicio
+
+Barra de Búsqueda: Se filtran los productos y servicios por sus atributos
+
+Filtros: Se filtran los productos y servicios por sus etiquetas correspondientes
+
+Contenido
+
+Contenedores con imagenes e info de los servicios y productos
+
+Crear un Nuevo Producto o Servicio
+
+Dar click en el botón “Nuevo Producto/Servicio”
+
+Se abre un pop-up con los siguientes campos
+
+Categoría: Dropdown
+
+Nombre: Input de texto
+
+Tipo: Dropdown
+
+Capacidad: Input de texto
+
+Precio: Numérico
+
+Stock Disponible: Numérico
+
+Estado: Dropdown del estado del producto o servicio
+
+Descripción: Input tipo textArea de una descripción detallada
+
+URL de la Imagen: Hipervínculo relacionado de un archivo IMG
+
+Botón “Cancelar” para cerrar el pop-up
+
+Icono “X” para cerrar el pop-up
+
+Confirmar la creación del Producto o Servicio
+
+Dar click en el botón “Crear”
+
+Se mostrará el nuevo Producto o Servicio en el listado
+
+Buscar productos o servicios por barra de búsqueda
+
+Dar click en la barra de búsqueda
+
+Escribir un nombre, descripción o capacidad de algún producto
+
+Filtrar productos por las etiquetas
+
+Dar click en una de las opciones de filtrado
+
+Se mostrarán únicamente los productos o servicios con las etiquetas seleccionadas
+
+Editar un producto o servicio
+
+Dar click al icono del lápiz 
+
+Se abrirá un pop-up con los mismos puntos para crear un producto o servicio
+
+Botón “Cancelar” para cerrar el pop-up
+
+Icono “X” para cerrar el pop-up
+
+Confirmar la edición del producto o servicio
+
+Dar click en el botón “Actualizar”
+
+Se mostrará el producto o servicio con la información actualizada
+
+Eliminar un producto o servicio
+
+Dar click en el icono del bote de basura
+
+Se abrirá un pop-up con lo siguiente:
+
+Botón “Cancelar” para no borrar
+
+Botón “Aceptar” para borrar
+
+Confirmar la eliminación del producto o servicio
+
+Dar click en el botón ”Aceptar”
+
+Se borrará el producto o servicio de la lista
+
+Mensajería
+
+A continuación se mostrará los elementos que conforman la pestaña de Mensajería
+
+La pestaña de mensajería envía notificaciones push a clientes y choferes, es una manera fácil y rápida de notificar a ambos de cualquier cosa que pueda surgir sin necesidad de aplicaciones de terceros, asegurando la privacidad de ambas partes.
+
+Header
+
+Título “Mensajería”
+
+Leyenda “Envía notificaciones push a clientes y choferes”
+
+Barra de filtrado de notificaciones
+
+Contenido
+
+Formulario para enviar notificaciones
+
+Historial: Lista de notificaciones enviadas
+
+Clientes: Lista de notificaciones enviadas a clientes
+
+Choferes: Lista de notificaciones enviadas a choferes
+
+Enviar Notificación
+
+Seleccionar una opción de destinatario del dropdown
+
+Título de notificación: input text
+
+Mensaje: Text area
+
+Envío: Seleccionar un envío de las opciones del dropdown
+
+(Si programar fecha) Fecha: Input date
+
+(Si programar fecha) Hora: Input hour
+
+Confirmar envío de notificación
+
+Dar click al botón “Enviar Notificación” o “Programar Notificación”
+
+Se enviará la notificación con el tipo de envío seleccionado a los usuarios
+
+Consultar los detalles de la notificación de cualquier opción (Historial, Clientes, Choferes)
+
+Dar click en una opción de filtrado (Historial, Clientes, Choferes)
+
+Dar click al icono del ojo en la notificación de la lista
+
+Se abrirá un pop-up
+
+Se podrá observar todos los detalles de la notificación
+
+Icono “X” para cerrar el pop-up
+
+Facturación
+
+A continuación se mostrará los elementos que conforman la pestaña de Facturación
+
+La pestaña de facturación sirve para gestionar las solicitudes de facturación de los clientes, se presentan las facturaciones de manera sencilla y concisa con una lista completa acomodada por ID Solicitud, Cliente, RFC, Razón Social, Email, Dirección, C.P, Uso CFDI, No. Pedido, Importe, Estado y Acciones para gestionar individualmente cada facturación
+
+Header
+
+Titulo “Facturación”
+
+Leyenda “Gestiona las solicitudes de facturación de tus clientes”
+
+Contenedores de visualización de facturas por etiquetas
+
+Contenido
+
+Barra de búsqueda de facturaciones
+
+Filtros de búsqueda por etiquetas
+
+Lista completa de las facturaciones
+
+Buscar facturación con la barra de búsqueda
+
+Dar click en la barra de búsqueda
+
+Escribir un cliente, RFC, Pedido o ID
+
+Dar enter
+
+Se verá únicamente la facturación deseada
+
+Buscar facturación por filtros
+
+Dar click a una de las tres opciones (Todas, Pendientes y Procesadas)
+
+Se presentarán únicamente las facturaciones que están dentro de esas etiquetas
+
+Observar todos los detalles de una facturación
+
+Dar click en el icono de archivo sobre la facturación
+
+Se abrirá un pop-up con la info completa de la facturación
+
+Botón “Cerrar” para cerrar el pop-up
+
+Icono “X” para cerrar el pop-up
+
+Enviar una factura
+
+Dentro del pop-up de facturación
+
+Dar click al botón “Enviar Factura”
+
+Se enviará la factura al remitente
+
+Procesar una factura
+
+Dentro del pop-up de facturación
+
+Dar click al botón de “Marcar como Procesada”
+
+Se marcará la factura como “Procesada”
+
+O: Dar click al icono de la palomita y se procesará igual
+
+Reportes
+
+A continuación se mostrará los elementos que conforman la pestaña de Reportes
+
+La pestaña de reportes te permite analizar estadísticas de negocio y ver claramente todo con respecto a la actividad reciente, con listas organizadas de reporte de ventas y contenedores con highlights de interés para administración.
+
+Header
+
+Título “Reportes”
+
+Leyenda “Análisis y estadísticas del negocio”
+
+Botón de entre fechas de los reportes (XX mes - XX mes)
+
+Botón “Exportar” para exportar los reportes
+
+Contenedores de Ventas Totales, Pedidos, Clientes Activos y Entregas Completadas
+
+Contenido
+
+Filtros de búsqueda para los reportes (Ventas, Productos, Choferes y Clientes)
+
+Contenedores del Total de Pedidos, Pedidos desde App y Pedidos Manuales
+
+Lista de Reporte de Ventas resumida
+
+Cambiar la fecha de los reportes
+
+Dar click al botón que tiene dos fechas
+
+Seleccionar una fecha del calendario
+
+Se mostrarán las estadísticas para ese lapso de tiempo
+
+Exportar los reportes
+
+Dar click al botón “Exportar”
+
+Se exportará un archivo de los reportes al dispositivo 
+
+Filtrar los reportes por tipo
+
+Dar click a cualquier opción entre Ventas, Productos, Choferes y Clientes
+
+Se visualizarán los reportes para el filtro seleccionado

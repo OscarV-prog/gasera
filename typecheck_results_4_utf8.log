@@ -1,0 +1,109 @@
+﻿ÔÇëWARNÔÇë Unsupported engine: wanted: {"node":"^22.21.0"} (current: {"node":"v24.13.0","pnpm":"10.19.0"})
+
+> create-t3-turbo@ typecheck C:\antigravity\gasera
+> turbo run typecheck
+
+node.exe : turbo 
+2.5.8
+En C:\Users\patys\App
+Data\Roaming\npm\pnpm
+.ps1: 24 Carácter: 5
++     & "node$exe"  "
+$basedir/node_modules
+/pnpm/bin/pnpm.cjs" 
+$args
++     ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (turbo 2   
+ .5.8:String) [],    
+ RemoteException
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+ÔÇó Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/expo, @acme/github, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tanstack-start, @acme/tsconfig, @acme/ui, @acme/validators
+ÔÇó Running typecheck in 13 packages
+ÔÇó Remote caching disabled
+@acme/prettier-config:typecheck: cache hit, replaying logs e1563ea62b9929ed
+@acme/prettier-config:typecheck: 
+@acme/prettier-config:typecheck: > @acme/prettier-config@ typecheck C:\antigravity\gasera\tooling\prettier
+@acme/prettier-config:typecheck: > tsc --noEmit
+@acme/prettier-config:typecheck: 
+@acme/eslint-config:typecheck: cache hit, replaying logs f2aed496261e69b6
+@acme/eslint-config:typecheck: 
+@acme/eslint-config:typecheck: > @acme/eslint-config@ typecheck C:\antigravity\gasera\tooling\eslint
+@acme/eslint-config:typecheck: > tsc --noEmit
+@acme/eslint-config:typecheck: 
+@acme/tailwind-config:typecheck: cache hit, replaying logs 435e56249b947d8f
+@acme/tailwind-config:typecheck: 
+@acme/tailwind-config:typecheck: > @acme/tailwind-config@ typecheck C:\antigravity\gasera\tooling\tailwind
+@acme/tailwind-config:typecheck: > tsc --noEmit
+@acme/tailwind-config:typecheck: 
+@acme/validators:typecheck: cache hit, replaying logs a0a11ff75e8016a8
+@acme/validators:typecheck: 
+@acme/validators:typecheck: > @acme/validators@ typecheck C:\antigravity\gasera\packages\validators
+@acme/validators:typecheck: > tsc --noEmit --emitDeclarationOnly false
+@acme/validators:typecheck: 
+@acme/validators:build: cache hit, replaying logs 08347fc53b39e5cf
+@acme/validators:build: 
+@acme/validators:build: > @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc
+@acme/validators:build: 
+@acme/db:typecheck: cache hit, replaying logs 87f13749c70dfedb
+@acme/db:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ typecheck C:\antigravity\gasera\packages\db
+@acme/db:typecheck: > tsc --noEmit[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/ui:typecheck: cache hit, replaying logs 0a530b280ea18004
+@acme/ui:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/ui@ typecheck C:\antigravity\gasera\packages\ui
+@acme/ui:typecheck: > tsc --noEmit[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/db:build: cache hit, replaying logs c9693b511d21922e
+@acme/db:build: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/auth:typecheck: cache hit, replaying logs 6a05e2f8d806c08e
+@acme/auth:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/auth@ typecheck C:\antigravity\gasera\packages\auth
+@acme/auth:typecheck: > tsc --noEmit[8;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/api:typecheck: cache miss, executing 2ffcc8366a57236d
+@acme/api:build: cache miss, executing e86e97d0a1035e86
+@acme/api:typecheck: 
+@acme/api:typecheck: > @acme/api@ typecheck C:\antigravity\gasera\packages\api
+@acme/api:typecheck: > tsc --noEmit
+@acme/api:typecheck: 
+@acme/api:build: 
+@acme/api:build: > @acme/api@ build C:\antigravity\gasera\packages\api
+@acme/api:build: > tsc
+@acme/api:build: 
+@acme/api:typecheck: error TS2688: Cannot find type definition file for 'vitest/globals'.
+@acme/api:typecheck:   The file is in the program because:
+@acme/api:typecheck:     Entry point of type library 'vitest/globals' specified in compilerOptions
+@acme/api:typecheck: ÔÇëELIFECYCLEÔÇë Command failed with exit code 2.
+@acme/api:typecheck: 
+ERROR: command 
+finished with error: 
+command (C:\antigravi
+ty\gasera\packages\ap
+i) C:\Users\patys\App
+Data\Local\pnpm\.tool
+s\pnpm\10.19.0\bin\pn
+pm.CMD run typecheck 
+exited (2)
+@acme/api#typecheck: 
+command (C:\antigravi
+ty\gasera\packages\ap
+i) C:\Users\patys\App
+Data\Local\pnpm\.tool
+s\pnpm\10.19.0\bin\pn
+pm.CMD run typecheck 
+exited (2)
+
+ Tasks:    9 successful, 11 total
+Cached:    9 cached, 11 total
+  Time:    11.497s 
+Failed:    @acme/api#typecheck
+
+ ERROR  run failed: 
+command  exited (2)
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 2.

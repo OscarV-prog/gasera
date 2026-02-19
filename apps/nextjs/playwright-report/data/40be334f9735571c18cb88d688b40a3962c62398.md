@@ -1,0 +1,60 @@
+# Page snapshot
+
+```yaml
+- generic [active] [ref=e1]:
+  - main [ref=e2]:
+    - button [ref=e4]:
+      - img
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - img [ref=e8]
+        - heading "Gasera" [level=2] [ref=e11]
+        - paragraph [ref=e12]: Crea tu cuenta
+      - generic [ref=e14]:
+        - generic [ref=e15]:
+          - generic [ref=e16]:
+            - generic [ref=e17]:
+              - generic [ref=e18]: Nombre Completo
+              - generic [ref=e19]:
+                - img [ref=e20]
+                - textbox "Nombre Completo" [ref=e23]:
+                  - /placeholder: Juan Pérez
+                  - text: Test Nav User n4k1im
+            - generic [ref=e24]:
+              - generic [ref=e25]: Correo Electrónico
+              - generic [ref=e26]:
+                - img [ref=e27]
+                - textbox "Correo Electrónico" [ref=e30]:
+                  - /placeholder: usuario@gasera.mx
+                  - text: test-nav-n4k1im@gasera.mx
+            - generic [ref=e31]:
+              - generic [ref=e33]: Contraseña
+              - generic [ref=e34]:
+                - img [ref=e35]
+                - textbox "Contraseña" [ref=e38]:
+                  - /placeholder: ••••••••
+                  - text: password123
+          - button "Registrarse" [ref=e39]:
+            - text: Registrarse
+            - img
+        - generic [ref=e40]:
+          - generic [ref=e41]: ¿Ya tienes cuenta?
+          - button "Inicia Sesión" [ref=e42]
+      - paragraph [ref=e43]:
+        - text: © 2026 Gasera México S.A. de C.V.
+        - text: "Soporte Técnico: 01 800 GASERA"
+  - button "Cambiar tema" [ref=e45]:
+    - img
+    - img
+    - img
+    - generic [ref=e46]: Cambiar tema
+  - region "Notifications alt+T"
+  - button "Open Next.js Dev Tools" [ref=e52] [cursor=pointer]:
+    - generic [ref=e55]:
+      - text: Compiling
+      - generic [ref=e56]:
+        - generic [ref=e57]: .
+        - generic [ref=e58]: .
+        - generic [ref=e59]: .
+  - alert [ref=e60]
+```

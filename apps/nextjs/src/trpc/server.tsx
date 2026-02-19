@@ -20,7 +20,7 @@ const createContext = cache(async () => {
 
   return createTRPCContext({
     headers: heads,
-    auth,
+    session: await auth.api.getSession({ headers: heads }),
   });
 });
 

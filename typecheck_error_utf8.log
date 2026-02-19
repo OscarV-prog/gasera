@@ -1,0 +1,262 @@
+﻿node.exe : turbo 2.5.8
+En C:\Users\patys\AppData\
+Roaming\npm\pnpm.ps1: 24 
+Carácter: 5
++     & "node$exe"  "$base
+dir/node_modules/pnpm/bin/
+pnpm.cjs" $args
++     ~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~
+    + CategoryInfo        
+      : NotSpecified: (t  
+  urbo 2.5.8:String) []   
+ , RemoteException
+    + FullyQualifiedError 
+   Id : NativeCommandErr  
+  or
+ 
+
+ÔÇó Packages in scope: @acme/nextjs
+ÔÇó Running typecheck in 1 packages
+ÔÇó Remote caching disabled
+@acme/db:build: cache miss, executing f2a76a693bb360ae
+@acme/validators:build: cache hit, replaying logs ea510f6fe192a041
+@acme/validators:build: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc[8;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/db:build: 
+@acme/db:build: > @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc
+@acme/db:build: 
+@acme/db:build: src/schema-epic7.ts(142,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(154,3): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema-epic7.ts(161,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(162,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(176,3): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema-epic7.ts(183,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(184,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(192,3): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema-epic7.ts(224,3): error TS2322: Type 'ZodEnum<["leak", "vehicle_issue", "customer_absent", "access_denied", "safety_hazard", "equipment_failure", "other"]>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodEnum<{ other: "other"; leak: "leak"; vehicle_issue: "vehicle_issue"; customer_absent: "customer_absent"; access_denied: "access_denied"; safety_hazard: "safety_hazard"; equipment_failure: "equipment_failure"; }>) => ZodType<...>) | undefined'.
+@acme/db:build:   Type 'ZodEnum<["leak", "vehicle_issue", "customer_absent", "access_denied", "safety_hazard", "equipment_failure", "other"]>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(225,3): error TS2322: Type 'ZodEnum<["low", "medium", "high", "critical"]>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodEnum<["low", "medium", "high", "critical"]>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(226,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(227,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(228,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema-epic7.ts(229,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(177,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(178,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(186,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(187,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(192,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(193,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(194,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(195,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(205,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(209,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(210,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(211,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(212,3): error TS2322: Type 'ZodNumber' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodInt) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodNumber' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(216,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(217,3): error TS2322: Type 'ZodNumber' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodInt) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodNumber' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(218,3): error TS2322: Type 'ZodNumber' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodInt) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodNumber' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(219,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(230,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(639,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(640,3): error TS2322: Type 'ZodNumber' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodNumber' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(641,3): error TS2322: Type 'ZodOptional<ZodNumber>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodInt) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodNumber>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(856,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(857,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(858,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(859,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(860,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(861,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(862,3): error TS2322: Type 'ZodOptional<ZodNumber>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodInt) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodNumber>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(863,3): error TS2322: Type 'ZodOptional<ZodNumber>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodInt) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodNumber>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(874,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(883,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(884,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(885,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(886,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(887,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(888,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(889,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(890,5): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(891,5): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(892,5): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(904,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(913,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(914,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(915,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(916,5): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(928,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(935,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(936,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(947,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(954,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(955,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(956,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(967,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(974,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(975,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(976,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(977,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(978,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(979,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(989,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(996,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(997,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1008,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(1015,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1016,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1017,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1027,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(1034,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1035,3): error TS2322: Type 'ZodNumber' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodInt) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodNumber' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1036,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1037,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1038,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1039,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1049,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(1520,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1521,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1532,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(1539,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1540,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1551,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1570,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(1577,3): error TS2740: Type 'PgEnum<["sales_by_product", "sales_by_driver", "sales_by_period", "driver_performance", "inventory_turn", "delivery_summary", "reconciliation", "financial_summary"]>' is missing the following properties from type 'ZodType<any, any, any>': _type, _output, _input, _def, and 34 more.
+@acme/db:build: src/schema.ts(1823,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1824,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1825,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1826,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1827,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1838,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(1845,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1846,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1847,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1848,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1861,5): error TS2741: Property '_zod' is missing in type 'ZodString' but required in type 'SomeType'.
+@acme/db:build: src/schema.ts(1868,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1869,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1870,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1901,3): error TS2322: Type 'ZodString' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodString' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1902,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1903,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: src/schema.ts(1904,3): error TS2322: Type 'ZodOptional<ZodString>' is not assignable to type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>> | ((schema: ZodString) => ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>) | undefined'.
+@acme/db:build:   Type 'ZodOptional<ZodString>' is missing the following properties from type 'ZodType<unknown, unknown, $ZodTypeInternals<unknown, unknown>>': def, type, check, clone, and 6 more.
+@acme/db:build: ÔÇëELIFECYCLEÔÇë Command failed with exit code 2.
+@acme/db:build: ERROR: 
+command finished with 
+error: command (C:\antigra
+vity\gasera\packages\db) C
+:\Users\patys\AppData\Loca
+l\pnpm\.tools\pnpm\10.19.0
+\bin\pnpm.CMD run build 
+exited (2)
+@acme/db#build: command (C
+:\antigravity\gasera\packa
+ges\db) C:\Users\patys\App
+Data\Local\pnpm\.tools\pnp
+m\10.19.0\bin\pnpm.CMD 
+run build exited (2)
+
+ Tasks:    1 successful, 2 total
+Cached:    1 cached, 2 total
+  Time:    7.145s 
+Failed:    @acme/db#build
+
+ ERROR  run failed: 
+command  exited (2)

@@ -1,0 +1,15 @@
+﻿src/router/driver.ts(30,74): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(62,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(127,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(172,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(244,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(300,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(352,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(388,74): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(422,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(462,74): error TS2304: Cannot find name 'TRPCError'.
+src/router/driver.ts(508,74): error TS2304: Cannot find name 'TRPCError'.
+src/router/drivers.ts(33,11): error TS2345: Argument of type 'SQL<unknown> | undefined' is not assignable to parameter of type 'SQL<unknown>'.
+  Type 'undefined' is not assignable to type 'SQL<unknown>'.
+src/router/reports.ts(25,76): error TS2304: Cannot find name 'TRPCError'.
+src/router/reports.ts(107,76): error TS2304: Cannot find name 'TRPCError'.

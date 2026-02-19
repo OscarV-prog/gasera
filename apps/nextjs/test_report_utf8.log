@@ -1,0 +1,33 @@
+﻿
+> @acme/nextjs@ test:e2e C:\antigravity\gasera\apps\nextjs
+> playwright test "--project=chromium"
+
+
+Running 1 test using 1 worker
+
+[1A[2K[1/1] [chromium] ÔÇ║ e2e\auth.spec.ts:4:3 ÔÇ║ Gasera Authentication & Dashboard Flow ÔÇ║ Should complete full auth cycle: Register -> Dashboard -> Logout
+[1A[2K  1) [chromium] ÔÇ║ e2e\auth.spec.ts:4:3 ÔÇ║ Gasera Authentication & Dashboard Flow ÔÇ║ Should complete full auth cycle: Register -> Dashboard -> Logout 
+
+    [31mTest timeout of 60000ms exceeded.[39m
+
+    Error: page.waitForURL: Test timeout of 60000ms exceeded.
+    =========================== logs ===========================
+    waiting for navigation until "load"
+    ============================================================
+
+      20 |     // 2. Verify Redirect to Dashboard
+      21 |     // Wait for URL to change to /dashboard or /orders (loading state might take a moment)
+    > 22 |     await page.waitForURL(/\/dashboard|\/orders/, { timeout: 60000 });
+         |                ^
+      23 |
+      24 |     // 3. Verify Dashboard Content
+      25 |     // Should see the Sidebar with "Dashboard" link
+        at C:\antigravity\gasera\apps\nextjs\e2e\auth.spec.ts:22:16
+
+    Error Context: test-results\auth-Gasera-Authentication-7b7e0-gister---Dashboard---Logout-chromium\error-context.md
+
+
+[1A[2K  1 failed
+    [chromium] ÔÇ║ e2e\auth.spec.ts:4:3 ÔÇ║ Gasera Authentication & Dashboard Flow ÔÇ║ Should complete full auth cycle: Register -> Dashboard -> Logout 
+
+[36m  Serving HTML report at http://localhost:9323. Press Ctrl+C to quit.[39m

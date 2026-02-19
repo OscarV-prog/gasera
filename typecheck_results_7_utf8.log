@@ -1,0 +1,121 @@
+﻿ÔÇëWARNÔÇë Unsupported engine: wanted: {"node":"^22.21.0"} (current: {"node":"v24.13.0","pnpm":"10.19.0"})
+
+> create-t3-turbo@ typecheck C:\antigravity\gasera
+> turbo run typecheck
+
+node.exe : turbo 
+2.5.8
+En C:\Users\patys\App
+Data\Roaming\npm\pnpm
+.ps1: 24 Carácter: 5
++     & "node$exe"  "
+$basedir/node_modules
+/pnpm/bin/pnpm.cjs" 
+$args
++     ~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~~~~~~~~~~~~~~~~~~
+~~~~
+    + CategoryInfo   
+           : NotSpe  
+  cified: (turbo 2   
+ .5.8:String) [],    
+ RemoteException
+    + FullyQualified 
+   ErrorId : Native  
+  CommandError
+ 
+
+ÔÇó Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/expo, @acme/github, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tanstack-start, @acme/tsconfig, @acme/ui, @acme/validators
+ÔÇó Running typecheck in 13 packages
+ÔÇó Remote caching disabled
+@acme/prettier-config:typecheck: cache hit, replaying logs e1563ea62b9929ed
+@acme/prettier-config:typecheck: 
+@acme/prettier-config:typecheck: > @acme/prettier-config@ typecheck C:\antigravity\gasera\tooling\prettier
+@acme/prettier-config:typecheck: > tsc --noEmit
+@acme/prettier-config:typecheck: 
+@acme/eslint-config:typecheck: cache hit, replaying logs f2aed496261e69b6
+@acme/eslint-config:typecheck: 
+@acme/eslint-config:typecheck: > @acme/eslint-config@ typecheck C:\antigravity\gasera\tooling\eslint
+@acme/eslint-config:typecheck: > tsc --noEmit
+@acme/eslint-config:typecheck: 
+@acme/validators:build: cache hit, replaying logs 08347fc53b39e5cf
+@acme/validators:build: 
+@acme/validators:build: > @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc
+@acme/validators:build: 
+@acme/ui:typecheck: cache hit, replaying logs 0a530b280ea18004
+@acme/ui:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/ui@ typecheck C:\antigravity\gasera\packages\ui
+@acme/ui:typecheck: > tsc --noEmit[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/tailwind-config:typecheck: cache hit, replaying logs 435e56249b947d8f
+@acme/tailwind-config:typecheck: 
+@acme/tailwind-config:typecheck: > @acme/tailwind-config@ typecheck C:\antigravity\gasera\tooling\tailwind
+@acme/tailwind-config:typecheck: > tsc --noEmit
+@acme/tailwind-config:typecheck: 
+@acme/db:typecheck: cache hit, replaying logs 87f13749c70dfedb
+@acme/db:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ typecheck C:\antigravity\gasera\packages\db
+@acme/db:typecheck: > tsc --noEmit[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/validators:typecheck: cache hit, replaying logs a0a11ff75e8016a8
+@acme/db:build: cache hit, replaying logs c9693b511d21922e
+@acme/validators:typecheck: 
+@acme/validators:typecheck: > @acme/validators@ typecheck C:\antigravity\gasera\packages\validators
+@acme/validators:typecheck: > tsc --noEmit --emitDeclarationOnly false
+@acme/validators:typecheck: 
+@acme/db:build: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc[7;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/auth:typecheck: cache hit, replaying logs 6a05e2f8d806c08e
+@acme/auth:typecheck: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/auth@ typecheck C:\antigravity\gasera\packages\auth
+@acme/auth:typecheck: > tsc --noEmit[8;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/api:typecheck: cache miss, executing 0dd77ad8f48652c7
+@acme/api:build: cache miss, executing a0f7d5f684952b66
+@acme/api:typecheck: 
+@acme/api:typecheck: > @acme/api@ typecheck C:\antigravity\gasera\packages\api
+@acme/api:typecheck: > tsc --noEmit
+@acme/api:typecheck: 
+@acme/api:build: 
+@acme/api:build: > @acme/api@ build C:\antigravity\gasera\packages\api
+@acme/api:build: > tsc
+@acme/api:build: 
+@acme/api:typecheck: src/router/assets.ts(66,9): error TS2578: Unused '@ts-expect-error' directive.
+@acme/api:typecheck: src/router/assets.ts(69,48): error TS2339: Property 'tenantId' does not exist on type '{ id: string; createdAt: Date; updatedAt: Date; email: string; emailVerified: boolean; name: string; image?: string | null | undefined; }'.
+@acme/api:typecheck: src/router/assets.ts(170,9): error TS2578: Unused '@ts-expect-error' directive.
+@acme/api:typecheck: src/router/assets.ts(173,48): error TS2339: Property 'tenantId' does not exist on type '{ id: string; createdAt: Date; updatedAt: Date; email: string; emailVerified: boolean; name: string; image?: string | null | undefined; }'.
+@acme/api:typecheck: src/router/assets.ts(219,9): error TS2578: Unused '@ts-expect-error' directive.
+@acme/api:typecheck: src/router/assets.ts(222,48): error TS2339: Property 'tenantId' does not exist on type '{ id: string; createdAt: Date; updatedAt: Date; email: string; emailVerified: boolean; name: string; image?: string | null | undefined; }'.
+@acme/api:typecheck: src/router/customers.ts(43,11): error TS2345: Argument of type 'SQL<unknown> | undefined' is not assignable to parameter of type 'SQL<unknown>'.
+@acme/api:typecheck:   Type 'undefined' is not assignable to type 'SQL<unknown>'.
+@acme/api:typecheck: src/router/orders.ts(58,9): error TS2578: Unused '@ts-expect-error' directive.
+@acme/api:typecheck: src/router/orders.ts(61,48): error TS2339: Property 'tenantId' does not exist on type '{ id: string; createdAt: Date; updatedAt: Date; email: string; emailVerified: boolean; name: string; image?: string | null | undefined; }'.
+@acme/api:typecheck: src/router/orders.ts(189,9): error TS2578: Unused '@ts-expect-error' directive.
+@acme/api:typecheck: src/router/orders.ts(192,48): error TS2339: Property 'tenantId' does not exist on type '{ id: string; createdAt: Date; updatedAt: Date; email: string; emailVerified: boolean; name: string; image?: string | null | undefined; }'.
+@acme/api:typecheck: src/router/sanity.test.ts(1,38): error TS2307: Cannot find module 'vitest' or its corresponding type declarations.
+@acme/api:typecheck: src/test/setup.ts(1,20): error TS2307: Cannot find module 'vitest' or its corresponding type declarations.
+@acme/api:typecheck: vitest.config.ts(1,30): error TS2307: Cannot find module 'vitest/config' or its corresponding type declarations.
+@acme/api:typecheck: ÔÇëELIFECYCLEÔÇë Command failed with exit code 2.
+@acme/api:typecheck: 
+ERROR: command 
+finished with error: 
+command (C:\antigravi
+ty\gasera\packages\ap
+i) C:\Users\patys\App
+Data\Local\pnpm\.tool
+s\pnpm\10.19.0\bin\pn
+pm.CMD run typecheck 
+exited (2)
+@acme/api#typecheck: 
+command (C:\antigravi
+ty\gasera\packages\ap
+i) C:\Users\patys\App
+Data\Local\pnpm\.tool
+s\pnpm\10.19.0\bin\pn
+pm.CMD run typecheck 
+exited (2)
+
+ Tasks:    9 successful, 11 total
+Cached:    9 cached, 11 total
+  Time:    16.75s 
+Failed:    @acme/api#typecheck
+
+ ERROR  run failed: 
+command  exited (2)
+ÔÇëELIFECYCLEÔÇë Command failed with exit code 2.
