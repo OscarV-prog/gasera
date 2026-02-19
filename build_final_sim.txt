@@ -1,0 +1,132 @@
+
+> create-t3-turbo@ build C:\antigravity\gasera
+> turbo run build "--filter=@acme/nextjs..." "--no-cache"
+
+ WARNING  --no-cache is deprecated and will be removed in a future major version. Use --cache=local:r,remote:r
+• Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tsconfig, @acme/ui, @acme/validators
+• Running build in 10 packages
+• Remote caching disabled
+@acme/validators:build: cache miss, executing e674843c2d945b95
+@acme/db:build: cache miss, executing e04486a36483d7e0
+@acme/validators:build: 
+@acme/validators:build: > @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc
+@acme/validators:build: 
+@acme/db:build: 
+@acme/db:build: > @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc
+@acme/db:build: 
+@acme/api:build: cache miss, executing a6d34adc5963ea61
+@acme/api:build: 
+@acme/api:build: > @acme/api@ build C:\antigravity\gasera\packages\api
+@acme/api:build: > tsc --noEmit
+@acme/api:build: 
+@acme/nextjs:build: cache miss, executing ebb918de803e032a
+@acme/nextjs:build: 
+@acme/nextjs:build: > @acme/nextjs@ build C:\antigravity\gasera\apps\nextjs
+@acme/nextjs:build: > next build
+@acme/nextjs:build: 
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build:    ▲ Next.js 16.0.10 (Turbopack)
+@acme/nextjs:build: 
+@acme/nextjs:build:  ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+@acme/nextjs:build:    Creating an optimized production build ...
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build:  ✓ Compiled successfully in 16.5s
+@acme/nextjs:build:    Skipping validation of types
+@acme/nextjs:build:    Collecting page data using 15 workers ...
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build:    Generating static pages using 15 workers (0/44) ...
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build:    Generating static pages using 15 workers (11/44) 
+@acme/nextjs:build:    Generating static pages using 15 workers (22/44) 
+@acme/nextjs:build:    Generating static pages using 15 workers (33/44) 
+@acme/nextjs:build:  ✓ Generating static pages using 15 workers (44/44) in 3.6s
+@acme/nextjs:build:    Finalizing page optimization ...
+@acme/nextjs:build: 
+@acme/nextjs:build: Route (app)
+@acme/nextjs:build: ┌ ○ /
+@acme/nextjs:build: ├ ○ /_not-found
+@acme/nextjs:build: ├ ƒ /api/auth/[...all]
+@acme/nextjs:build: ├ ƒ /api/trpc/[trpc]
+@acme/nextjs:build: ├ ƒ /dashboard
+@acme/nextjs:build: ├ ƒ /dashboard/app-info
+@acme/nextjs:build: ├ ƒ /dashboard/assets
+@acme/nextjs:build: ├ ƒ /dashboard/certifications
+@acme/nextjs:build: ├ ƒ /dashboard/customers
+@acme/nextjs:build: ├ ƒ /dashboard/customers/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/customers/[id]/edit
+@acme/nextjs:build: ├ ƒ /dashboard/customers/new
+@acme/nextjs:build: ├ ƒ /dashboard/deliveries
+@acme/nextjs:build: ├ ƒ /dashboard/deliveries/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/dispatch
+@acme/nextjs:build: ├ ƒ /dashboard/drivers
+@acme/nextjs:build: ├ ƒ /dashboard/drivers/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/drivers/[id]/edit
+@acme/nextjs:build: ├ ƒ /dashboard/drivers/new
+@acme/nextjs:build: ├ ƒ /dashboard/faqs
+@acme/nextjs:build: ├ ƒ /dashboard/faqs/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/faqs/categories
+@acme/nextjs:build: ├ ƒ /dashboard/faqs/new
+@acme/nextjs:build: ├ ƒ /dashboard/fleet
+@acme/nextjs:build: ├ ƒ /dashboard/invitations
+@acme/nextjs:build: ├ ƒ /dashboard/legal/documents
+@acme/nextjs:build: ├ ƒ /dashboard/legal/versions
+@acme/nextjs:build: ├ ƒ /dashboard/messages
+@acme/nextjs:build: ├ ƒ /dashboard/operations
+@acme/nextjs:build: ├ ƒ /dashboard/operations/billing
+@acme/nextjs:build: ├ ƒ /dashboard/operations/reconciliation
+@acme/nextjs:build: ├ ƒ /dashboard/operations/reports
+@acme/nextjs:build: ├ ƒ /dashboard/orders
+@acme/nextjs:build: ├ ƒ /dashboard/orders/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/orders/new
+@acme/nextjs:build: ├ ƒ /dashboard/products
+@acme/nextjs:build: ├ ƒ /dashboard/products/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/products/[id]/edit
+@acme/nextjs:build: ├ ƒ /dashboard/products/new
+@acme/nextjs:build: ├ ƒ /dashboard/profile
+@acme/nextjs:build: ├ ƒ /dashboard/reports
+@acme/nextjs:build: ├ ƒ /dashboard/reports/customers
+@acme/nextjs:build: ├ ƒ /dashboard/reports/customers/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/reports/customers/new
+@acme/nextjs:build: ├ ƒ /dashboard/reports/drivers
+@acme/nextjs:build: ├ ƒ /dashboard/reports/drivers/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/reports/drivers/new
+@acme/nextjs:build: ├ ƒ /dashboard/routes
+@acme/nextjs:build: ├ ƒ /dashboard/scheduling
+@acme/nextjs:build: ├ ƒ /dashboard/superadmin
+@acme/nextjs:build: ├ ƒ /dashboard/support/contacts
+@acme/nextjs:build: ├ ƒ /dashboard/support/faq
+@acme/nextjs:build: ├ ƒ /dashboard/units
+@acme/nextjs:build: ├ ƒ /dashboard/units/[id]
+@acme/nextjs:build: ├ ƒ /dashboard/units/[id]/edit
+@acme/nextjs:build: ├ ƒ /dashboard/units/new
+@acme/nextjs:build: ├ ƒ /dashboard/vehicles
+@acme/nextjs:build: └ ƒ /debug
+@acme/nextjs:build: 
+@acme/nextjs:build: 
+@acme/nextjs:build: ƒ Proxy (Middleware)
+@acme/nextjs:build: 
+@acme/nextjs:build: ○  (Static)   prerendered as static content
+@acme/nextjs:build: ƒ  (Dynamic)  server-rendered on demand
+@acme/nextjs:build: 
+
+ Tasks:    4 successful, 4 total
+Cached:    0 cached, 4 total
+  Time:    48.811s 
+

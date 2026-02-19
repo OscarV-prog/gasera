@@ -1,0 +1,56 @@
+
+> create-t3-turbo@ build C:\antigravity\gasera
+> turbo run build "--filter=@acme/nextjs..." "--no-cache"
+
+ WARNING  --no-cache is deprecated and will be removed in a future major version. Use --cache=local:r,remote:r
+turbo 2.5.8
+
+• Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tsconfig, @acme/ui, @acme/validators
+• Running build in 10 packages
+• Remote caching disabled
+@acme/validators:build: cache miss, executing 25839421a37a1b9a
+@acme/db:build: cache hit, replaying logs 07dfd003edba0a2c
+@acme/db:build: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc[8;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/validators:build: 
+@acme/validators:build: > @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc
+@acme/validators:build: 
+@acme/api:build: cache miss, executing d5edfe663c25a8a8
+@acme/api:build: 
+@acme/api:build: > @acme/api@ build C:\antigravity\gasera\packages\api
+@acme/api:build: > tsc --noEmit
+@acme/api:build: 
+@acme/nextjs:build: cache miss, executing 72d1733538aa9d8d
+@acme/nextjs:build: 
+@acme/nextjs:build: > @acme/nextjs@ build C:\antigravity\gasera\apps\nextjs
+@acme/nextjs:build: > next build
+@acme/nextjs:build: 
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: ❌ Invalid environment variables: [
+@acme/nextjs:build:   {
+@acme/nextjs:build:     code: 'invalid_type',
+@acme/nextjs:build:     expected: 'string',
+@acme/nextjs:build:     received: 'undefined',
+@acme/nextjs:build:     path: [ 'AUTH_SECRET' ],
+@acme/nextjs:build:     message: 'Required'
+@acme/nextjs:build:   }
+@acme/nextjs:build: ]
+@acme/nextjs:build:  ⨯ Failed to load next.config.js, see more info here https://nextjs.org/docs/messages/next-config-error
+@acme/nextjs:build: 
+@acme/nextjs:build: > Build error occurred
+@acme/nextjs:build: Error: Invalid environment variables
+@acme/nextjs:build:     at authEnv (C:/antigravity/gasera/packages/auth/env.ts:5:33)
+@acme/nextjs:build:     at <unknown> (C:/antigravity/gasera/apps/nextjs/src/env.ts:8:30)
+@acme/nextjs:build:     at async (next.config.js:6:1)
+@acme/nextjs:build:  ELIFECYCLE  Command failed with exit code 1.
+@acme/nextjs:build: ERROR: command finished with error: command (C:\antigravity\gasera\apps\nextjs) C:\Users\patys\AppData\Local\pnpm\.tools\pnpm\10.19.0\bin\pnpm.CMD run build exited (1)
+@acme/nextjs#build: command (C:\antigravity\gasera\apps\nextjs) C:\Users\patys\AppData\Local\pnpm\.tools\pnpm\10.19.0\bin\pnpm.CMD run build exited (1)
+
+ Tasks:    3 successful, 4 total
+Cached:    1 cached, 4 total
+  Time:    13.761s 
+Failed:    @acme/nextjs#build
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.

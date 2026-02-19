@@ -1,0 +1,50 @@
+
+> create-t3-turbo@ build C:\antigravity\gasera
+> turbo run build "--filter=@acme/nextjs..." "--no-cache"
+
+ WARNING  --no-cache is deprecated and will be removed in a future major version. Use --cache=local:r,remote:r
+turbo 2.5.8
+
+• Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tsconfig, @acme/ui, @acme/validators
+• Running build in 10 packages
+• Remote caching disabled
+@acme/validators:build: cache miss, executing 25839421a37a1b9a
+@acme/db:build: cache hit, replaying logs 07dfd003edba0a2c
+@acme/db:build: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc[8;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/validators:build: 
+@acme/validators:build: > @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc
+@acme/validators:build: 
+@acme/api:build: cache miss, executing f395e969c6f32ff6
+@acme/api:build: 
+@acme/api:build: > @acme/api@ build C:\antigravity\gasera\packages\api
+@acme/api:build: > tsc
+@acme/api:build: 
+@acme/api:build: src/root.ts(1,15): error TS2305: Module '"better-auth/plugins"' has no exported member 'OAuthProxyOptions'.
+@acme/api:build: src/router/assets.ts(24,14): error TS4023: Exported variable 'assetsRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/router/customers.ts(24,14): error TS4023: Exported variable 'customersRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/router/legal.ts(24,14): error TS4023: Exported variable 'legalRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/router/orders.ts(21,14): error TS4023: Exported variable 'ordersRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/router/products.ts(18,14): error TS4023: Exported variable 'productsRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/router/tracking.ts(13,14): error TS4023: Exported variable 'trackingRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/router/user.ts(8,14): error TS4023: Exported variable 'userRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(19,14): error TS4023: Exported variable 'createTRPCContext' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(105,14): error TS4023: Exported variable 'createTRPCRouter' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(119,14): error TS4023: Exported variable 'publicProcedure' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(121,14): error TS4023: Exported variable 'protectedProcedure' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(130,14): error TS4023: Exported variable 'superadminProcedure' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(137,14): error TS4023: Exported variable 'adminProcedure' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(145,14): error TS4023: Exported variable 'supervisorProcedure' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build: src/trpc.ts(156,14): error TS4023: Exported variable 'operatorProcedure' has or is using name 'OAuthProxyOptions' from external module "C:/antigravity/gasera/node_modules/.pnpm/better-auth@1.4.0-beta.9_be_6706c52f1f5e2f1f6aa7edda0c04b328/node_modules/better-auth/dist/plugins/oauth-proxy/index" but cannot be named.
+@acme/api:build:  ELIFECYCLE  Command failed with exit code 1.
+@acme/api:build: ERROR: command finished with error: command (C:\antigravity\gasera\packages\api) C:\Users\patys\AppData\Local\pnpm\.tools\pnpm\10.19.0\bin\pnpm.CMD run build exited (1)
+@acme/api#build: command (C:\antigravity\gasera\packages\api) C:\Users\patys\AppData\Local\pnpm\.tools\pnpm\10.19.0\bin\pnpm.CMD run build exited (1)
+
+ Tasks:    2 successful, 3 total
+Cached:    1 cached, 3 total
+  Time:    5.273s 
+Failed:    @acme/api#build
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.

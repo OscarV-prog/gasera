@@ -1,0 +1,682 @@
+
+> create-t3-turbo@ build C:\antigravity\gasera
+> turbo run build "--filter=@acme/nextjs..." "--no-cache"
+
+ WARNING  --no-cache is deprecated and will be removed in a future major version. Use --cache=local:r,remote:r
+• Packages in scope: @acme/api, @acme/auth, @acme/db, @acme/eslint-config, @acme/nextjs, @acme/prettier-config, @acme/tailwind-config, @acme/tsconfig, @acme/ui, @acme/validators
+• Running build in 10 packages
+• Remote caching disabled
+@acme/validators:build: cache miss, executing 25839421a37a1b9a
+@acme/db:build: cache hit, replaying logs 07dfd003edba0a2c
+@acme/db:build: [?9001h[?1004h[?25l[2J[m[2;1H> @acme/db@ build C:\antigravity\gasera\packages\db
+@acme/db:build: > tsc[8;1H]0;C:\WINDOWS\system32\cmd.exe[?25h[?9001l[?1004l
+@acme/validators:build: 
+@acme/validators:build: > @acme/validators@ build C:\antigravity\gasera\packages\validators
+@acme/validators:build: > tsc
+@acme/validators:build: 
+@acme/api:build: cache miss, executing d5edfe663c25a8a8
+@acme/api:build: 
+@acme/api:build: > @acme/api@ build C:\antigravity\gasera\packages\api
+@acme/api:build: > tsc --noEmit
+@acme/api:build: 
+@acme/nextjs:build: cache miss, executing 72d1733538aa9d8d
+@acme/nextjs:build: 
+@acme/nextjs:build: > @acme/nextjs@ build C:\antigravity\gasera\apps\nextjs
+@acme/nextjs:build: > next build
+@acme/nextjs:build: 
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: Attention: Next.js now collects completely anonymous telemetry regarding usage.
+@acme/nextjs:build: This information is used to shape Next.js' roadmap and prioritize features.
+@acme/nextjs:build: You can learn more, including how to opt-out if you'd not like to participate in this anonymous program, by visiting the following URL:
+@acme/nextjs:build: https://nextjs.org/telemetry
+@acme/nextjs:build: 
+@acme/nextjs:build:    ▲ Next.js 16.0.10 (Turbopack)
+@acme/nextjs:build: 
+@acme/nextjs:build:  ⚠ The "middleware" file convention is deprecated. Please use "proxy" instead. Learn more: https://nextjs.org/docs/messages/middleware-to-proxy
+@acme/nextjs:build:    Creating an optimized production build ...
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build:  ✓ Compiled successfully in 17.0s
+@acme/nextjs:build:    Skipping validation of types
+@acme/nextjs:build:    Collecting page data using 15 workers ...
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: [baseline-browser-mapping] The data in this module is over two months old.  To ensure accurate Baseline data, please update: `npm i baseline-browser-mapping@latest -D`
+@acme/nextjs:build: Error: Missing POSTGRES_URL
+@acme/nextjs:build:     at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[root-of-the-server]__96f8dd55._.js:261:162215)
+@acme/nextjs:build:     at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:     at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:     at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:     at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[root-of-the-server]__96f8dd55._.js:261:163170)
+@acme/nextjs:build:     at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:     at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:     at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:     at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[root-of-the-server]__99f55aac._.js:1:1980)
+@acme/nextjs:build:     at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/drivers/[id]/edit
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/drivers/new
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/dispatch
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/faqs/categories
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/faqs
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/faqs/new
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/fleet
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/invitations
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/legal/versions
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/messages
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/faqs/[id]
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/operations
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/operations/reports
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/orders/[id]
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/operations/billing
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/operations/reconciliation
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/legal/documents
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/orders/new
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/orders
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/products/[id]
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/products/new
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/products
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Missing POSTGRES_URL
+@acme/nextjs:build:     at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[root-of-the-server]__57c804ab._.js:48:54685)
+@acme/nextjs:build:     at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:     at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:     at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:     at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\12857_next_dist_esm_build_templates_app-route_e15cd4e1.js:5:4354)
+@acme/nextjs:build:     at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:     at instantiateRuntimeModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:743:12)
+@acme/nextjs:build:     at getOrInstantiateRuntimeModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:756:12)
+@acme/nextjs:build:     at Object.m (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\[turbopack]_runtime.js:765:18)
+@acme/nextjs:build:     at Object.<anonymous> (C:\antigravity\gasera\apps\nextjs\.next\server\app\api\trpc\[trpc]\route.js:8:3)
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/profile
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/reports/customers/new
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/reports/drivers
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/reports/customers
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/reports
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/routes
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/products/[id]/edit
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/scheduling
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/units/[id]/edit
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/superadmin
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/support/contacts
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/app-info
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__c6ce183a._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/units/[id]
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/units/new
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/support/faq
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__c6ce183a._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/units
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/reports/drivers/[id]
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__e0ce0d86._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/vehicles
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__c6ce183a._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: Error: Failed to collect configuration for /dashboard/reports/drivers/new
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   [cause]: Error: Missing POSTGRES_URL
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\_6d33e910._.js:226:88674)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__71a2a39f._.js:1:5305)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build:       at getOrInstantiateModuleFromParent (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:738:12)
+@acme/nextjs:build:       at Context.esmImport [as i] (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:228:20)
+@acme/nextjs:build:       at module evaluation (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[root-of-the-server]__9aa58cbd._.js:1:316)
+@acme/nextjs:build:       at instantiateModule (C:\antigravity\gasera\apps\nextjs\.next\server\chunks\ssr\[turbopack]_runtime.js:715:9)
+@acme/nextjs:build: }
+@acme/nextjs:build: 
+@acme/nextjs:build: > Build error occurred
+@acme/nextjs:build: Error: Failed to collect page data for /api/auth/[...all]
+@acme/nextjs:build:     at ignore-listed frames {
+@acme/nextjs:build:   type: 'Error'
+@acme/nextjs:build: }
+@acme/nextjs:build:  ELIFECYCLE  Command failed with exit code 1.
+@acme/nextjs:build: ERROR: command finished with error: command (C:\antigravity\gasera\apps\nextjs) C:\Users\patys\AppData\Local\pnpm\.tools\pnpm\10.19.0\bin\pnpm.CMD run build exited (1)
+@acme/nextjs#build: command (C:\antigravity\gasera\apps\nextjs) C:\Users\patys\AppData\Local\pnpm\.tools\pnpm\10.19.0\bin\pnpm.CMD run build exited (1)
+
+ Tasks:    3 successful, 4 total
+Cached:    1 cached, 4 total
+  Time:    48.379s 
+Failed:    @acme/nextjs#build
+
+ ERROR  run failed: command  exited (1)
+ ELIFECYCLE  Command failed with exit code 1.

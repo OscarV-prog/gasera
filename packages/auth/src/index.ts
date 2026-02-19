@@ -33,7 +33,7 @@ export function initAuth<
       }),
       expo(),
       ...(options.extraPlugins ?? []),
-    ],
+    ] as BetterAuthPlugin[],
     // socialProviders: {
     //   discord: {
     //     clientId: options.discordClientId,
@@ -65,4 +65,27 @@ export function initAuth<
 }
 
 export type Auth = ReturnType<typeof initAuth>;
-export type Session = Auth["$Infer"]["Session"];
+
+export interface Session {
+  user: {
+    id: string;
+    email: string;
+    emailVerified: boolean;
+    name: string;
+    image?: string | null;
+    createdAt: Date;
+    updatedAt: Date;
+    tenantId?: string | null;
+    role: string;
+  };
+  session: {
+    id: string;
+    userId: string;
+    expiresAt: Date;
+    token: string;
+    createdAt: Date;
+    updatedAt: Date;
+    ipAddress?: string | null;
+    userAgent?: string | null;
+  };
+}
