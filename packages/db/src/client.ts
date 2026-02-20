@@ -1,4 +1,3 @@
-import { sql } from "@vercel/postgres";
 import { drizzle as drizzlePostgresJs } from "drizzle-orm/postgres-js";
 import { drizzle as drizzleVercelPostgres } from "drizzle-orm/vercel-postgres";
 import postgres from "postgres";
@@ -45,10 +44,10 @@ function selectDbDriver(urlString: string) {
   const vercel = isRunningOnVercel();
   const supabaseDirect = looksLikeSupabaseDirect(url);
 
-  // Rule:
-  // - If pooled OR on Vercel -> use @vercel/postgres
-  // - Else (not pooled) -> use direct driver (postgres-js)
-  const driver = pooled || vercel ? "vercel" : "postgres-js";
+  // Only use @vercel/postgres when actually running on Vercel AND the URL is pooled.
+  // On Netlify (no VERCEL env vars) always use postgres-js to avoid
+  // @vercel/postgres crashing on import.
+  const driver = vercel && pooled ? "vercel" : "postgres-js";
 
   return {
     driver,
@@ -69,40 +68,33 @@ const selected = selectDbDriver(POSTGRES_URL);
 if (process.env.NODE_ENV !== "production") {
   const msg = `[db] driver=${selected.driver} pooled=${selected.pooled} vercel=${selected.vercel} supabaseDirect=${selected.supabaseDirect}`;
   console.info(msg, selected.meta);
-
-  if (
-    selected.driver === "vercel" &&
-    selected.supabaseDirect &&
-    !selected.pooled &&
-    !selected.vercel
-  ) {
-    console.warn(
-      "[db] POSTGRES_URL looks like a direct Supabase connection string (:5432, host db.<proj>.supabase.co). " +
-        "Switching to direct driver (postgres-js) is recommended for dev; pooled URLs are required for @vercel/postgres.",
-      selected.meta,
-    );
-  }
 }
 
 declare global {
   var __acme_postgres_js_client: ReturnType<typeof postgres> | undefined;
 }
 
+function buildVercelDrizzle() {
+  // Dynamically import @vercel/postgres to avoid crashing on non-Vercel envs.
+  // eslint-disable-next-line @typescript-eslint/no-require-imports
+  const { sql } = require("@vercel/postgres") as {
+    sql: import("@vercel/postgres").VercelPool;
+  };
+  return drizzleVercelPostgres({ client: sql, schema, casing: "snake_case" });
+}
+
+function buildPostgresJsDrizzle(url: string, supabaseDirect: boolean) {
+  const client =
+    globalThis.__acme_postgres_js_client ??
+    (globalThis.__acme_postgres_js_client = postgres(url, {
+      // Supabase direct connections require SSL.
+      ssl: supabaseDirect ? "require" : undefined,
+      max: 1,
+    }));
+  return drizzlePostgresJs({ client, schema, casing: "snake_case" });
+}
+
 export const db =
   selected.driver === "vercel"
-    ? drizzleVercelPostgres({
-        client: sql,
-        schema,
-        casing: "snake_case",
-      })
-    : drizzlePostgresJs({
-        client:
-          globalThis.__acme_postgres_js_client ??
-          (globalThis.__acme_postgres_js_client = postgres(POSTGRES_URL, {
-            // Supabase direct connections require SSL.
-            ssl: selected.supabaseDirect ? "require" : undefined,
-            max: 1,
-          })),
-        schema,
-        casing: "snake_case",
-      });
+    ? buildVercelDrizzle()
+    : buildPostgresJsDrizzle(POSTGRES_URL, selected.supabaseDirect);
