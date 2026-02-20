@@ -54,14 +54,17 @@ export function initAuth<
       },
     },
     trustedOrigins: (request: Request) => {
-      const origin = request.headers.get("origin") ?? "";
+      const origin = (request.headers.get("origin") ?? "").replace(/\/$/, "");
       const allowed = [
         "expo://",
-        options.productionUrl,
-        options.baseUrl,
+        options.productionUrl?.replace(/\/$/, ""),
+        options.baseUrl?.replace(/\/$/, ""),
       ].filter(Boolean);
-      // Allow any *.netlify.app domain (main + deploy previews)
-      if (/^https:\/\/[^/]+\.netlify\.app$/.test(origin)) return allowed;
+
+      // Dynamically trust any *.netlify.app origin (main + deploy previews)
+      if (origin && /^https:\/\/[^/]+\.netlify\.app$/.test(origin)) {
+        return [...new Set([...allowed, origin])];
+      }
       return allowed;
     },
     onAPIError: {
