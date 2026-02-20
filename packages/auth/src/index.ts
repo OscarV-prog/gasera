@@ -53,7 +53,17 @@ export function initAuth<
         },
       },
     },
-    trustedOrigins: ["expo://"],
+    trustedOrigins: (request: Request) => {
+      const origin = request.headers.get("origin") ?? "";
+      const allowed = [
+        "expo://",
+        options.productionUrl,
+        options.baseUrl,
+      ].filter(Boolean);
+      // Allow any *.netlify.app domain (main + deploy previews)
+      if (/^https:\/\/[^/]+\.netlify\.app$/.test(origin)) return allowed;
+      return allowed;
+    },
     onAPIError: {
       onError(error, ctx) {
         console.error("BETTER AUTH API ERROR", error, ctx);
