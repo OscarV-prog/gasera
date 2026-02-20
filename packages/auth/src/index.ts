@@ -50,6 +50,7 @@ export function initAuth<
         role: {
           type: "string",
           required: true,
+          defaultValue: "operator",
         },
       },
     },
