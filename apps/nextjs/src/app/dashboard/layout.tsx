@@ -13,7 +13,7 @@ import {
 } from "@acme/ui";
 
 import { getSession } from "~/auth/server";
-import { DashboardSidebar } from "./_components/sidebar";
+import { DashboardSidebar, SidebarNavContent } from "./_components/sidebar";
 import { UserNav } from "./_components/user-nav";
 
 export default async function DashboardLayout({
@@ -43,8 +43,11 @@ export default async function DashboardLayout({
                     <Menu className="h-6 w-6" />
                   </Button>
                 </SheetTrigger>
-                <SheetContent side="left" className="w-72 p-0">
-                  <DashboardSidebar />
+                <SheetContent
+                  side="left"
+                  className="w-72 bg-white p-0 dark:bg-gray-900"
+                >
+                  <SidebarNavContent />
                 </SheetContent>
               </Sheet>
               <Link
